@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.Controller">
+   <children>
+
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Home" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </MenuBar>
+
+      <HBox prefHeight="47.0" prefWidth="600.0">
+         <children>
+
+             <Label text="Charity Search">
+               <font>
+                  <Font name="Verdana Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="10.0" />
+               </HBox.margin>
+             </Label>
+
+            <Region prefHeight="53.0" prefWidth="373.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btn_Login" mnemonicParsing="false" onAction="#loginBTNClicked" text="Login" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+
+             <Button fx:id="btn_SignUp" mnemonicParsing="false" onAction="#signUpBTNClicked" text="Sign-Up" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+
+      <TextField fx:id="txtFL_SearchCharity" prefHeight="25.0" prefWidth="603.0">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </TextField>
+
+     <HBox>
+         <children>
+            <ComboBox prefWidth="150.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Region prefHeight="15.0" prefWidth="534.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btn_Search" mnemonicParsing="false" prefHeight="48.0" prefWidth="98.0" text="Search">
+               <HBox.margin>
+                  <Insets right="10.0" top="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+
+      <TreeTableView fx:id="TTV_Results" prefHeight="498.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+        <columns>
+          <TreeTableColumn fx:id="TTC1_Charity_Name" prefWidth="610.0" text="Charity" />
+          <TreeTableColumn fx:id="TTC2_City" prefWidth="178.0" text="City" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </VBox.margin>
+      </TreeTableView>
+   </children>
+</VBox>
