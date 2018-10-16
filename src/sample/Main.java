@@ -13,13 +13,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
         //Set homePanel FXML
-        Parent root = FXMLLoader.load(getClass().getResource("FXML/homePanel.fxml"));
-
+        Parent root = FXMLLoader.load(getClass().getResource("FXML/HomePanel/homePanel.fxml"));
         //initializing Home scene/layouts
         primaryStage.setTitle("Volunteer Guru 1.0");
-        primaryStage.setScene(new Scene( root, 800,600));
+        primaryStage.setScene(new Scene( root, 1280,800));
         primaryStage.show();
     }
 

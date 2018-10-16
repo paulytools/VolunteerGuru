@@ -7,7 +7,7 @@
  * File Summary: Handles the program's I/O while maintains any state changes of a panel.
  ******************************************************************************/
 
-package sample.FXML;
+package sample.FXML.HomePanel;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
@@ -18,11 +18,10 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 
-public class Controller  {
+public class HomeController {
 
   /* ID/Variable Declarations */
   private Stage stage;
-
   @FXML
   private Button btn_Login;
   @FXML
@@ -32,29 +31,23 @@ public class Controller  {
   @FXML
   private Button btn_Submit;
 
+
   /* Methods / Events*/
   //Home Panel functions
   @FXML //Change homePanel.fxml -> login.fxml
   private void OpenLoginBTNClicked() throws IOException {
-    System.out.println("[Event](Login Clicked)");
+    System.out.println("[Event](OPEN-Login Clicked)");
     stage = (Stage) btn_OpenLogin.getScene().getWindow();
-    Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+    Parent root = FXMLLoader.load(getClass().getResource("/sample/FXML/login.fxml"));
     Scene scene = new Scene(root);
     stage.setScene(scene);
   }
-  @FXML
-  private void loginBTNClicked() throws IOException {
-    System.out.println("[Event](Login Clicked)");
-    stage = (Stage) btn_Login.getScene().getWindow();
-    Parent root = FXMLLoader.load(getClass().getResource("HomePanel/homePanel.fxml"));
-    Scene scene = new Scene(root);
-    stage.setScene(scene);
-  }
+
   @FXML //Change homePanel -> signUp.fxml
   private void signUpBTNClicked()throws IOException {
     System.out.println("[Event](Sign-Up Clicked)");
     stage = (Stage) btn_SignUp.getScene().getWindow();
-    Parent root = FXMLLoader.load(getClass().getResource("SignUpPanel/signUp.fxml"));
+    Parent root = FXMLLoader.load(getClass().getResource("/sample/FXML/SignUpPanel/signUp.fxml"));
     Scene scene = new Scene(root);
     stage.setScene(scene);
   }
