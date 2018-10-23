@@ -1,17 +1,20 @@
 package sample.users;
 
+import javafx.beans.property.SimpleStringProperty;
+
 public class User {
 
 	private final String TYPE;
 	public static final String VOLUNTEER = "VOLUNTEER";
 	public static final String ORGANIZATION = "ORGANIZATION";
 
-	protected String userName;
-	protected String firstName;
-	protected String lastName;
-	protected String email;
-	protected String address;
-	protected String password;
+	private String userName;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String address;
+	private String password;
+
 
 
 	public User(String type, String userName, String firstName, String lastName, String email, String address, String password) {

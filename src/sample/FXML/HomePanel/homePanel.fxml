@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" depthTest="ENABLE" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.HomePanel.HomeController">
+<VBox alignment="CENTER" depthTest="ENABLE" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.HomePanel.tabController.HomeController">
    <children>
       <TabPane tabClosingPolicy="UNAVAILABLE" tabMinHeight="50.0" tabMinWidth="300.0" VBox.vgrow="ALWAYS">
          <tabs>
@@ -15,6 +15,9 @@
                      <children>
                         <fx:include prefHeight="600.0" prefWidth="1000.0" source="tab1FindOrganizationPanel.fxml" VBox.vgrow="ALWAYS" />
                      </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
                   </VBox>
                </content>
             </Tab>
@@ -22,8 +25,11 @@
                <content>
                   <VBox prefHeight="603.0" prefWidth="890.0">
                      <children>
-                        <fx:include source="tab2FindEventsPanel.fxml" VBox.vgrow="ALWAYS" />
+                        <fx:include source="tab2FindEventPanel.fxml" VBox.vgrow="ALWAYS" />
                      </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
                   </VBox>
                </content>
             </Tab>
@@ -31,8 +37,11 @@
                <content>
                   <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <fx:include source="tab3FindVolunteer.fxml" VBox.vgrow="ALWAYS" />
+                        <fx:include source="tab3FindVolunteerPanel.fxml" VBox.vgrow="ALWAYS" />
                      </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
                   </VBox>
                </content>
             </Tab>

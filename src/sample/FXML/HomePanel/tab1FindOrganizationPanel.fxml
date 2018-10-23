@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.HomePanel.HomeController">
+<VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.HomePanel.tabController.tab1Controller">
    <children>
 
       <HBox prefHeight="47.0" prefWidth="600.0">
@@ -28,6 +28,11 @@
              </Label>
 
             <Region prefHeight="53.0" prefWidth="373.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btn_demo" mnemonicParsing="false" onAction="#demoUpBTNClicked" prefHeight="25.0" prefWidth="106.0" text="[Demo-Profile]">
+               <HBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
             <Button fx:id="btn_OpenLogin" minWidth="-Infinity" mnemonicParsing="false" onAction="#OpenLoginBTNClicked" text="Login" HBox.hgrow="NEVER">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
@@ -53,7 +58,7 @@
 
      <HBox>
          <children>
-            <ComboBox minWidth="-Infinity" prefWidth="150.0">
+            <ComboBox fx:id="cmbox_Tag" minWidth="-Infinity" prefWidth="150.0" promptText="Select a category.">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -61,8 +66,8 @@
                   <Insets left="10.0" />
                </HBox.margin>
             </ComboBox>
-            <Region prefHeight="15.0" prefWidth="534.0" HBox.hgrow="ALWAYS" />
-            <Button fx:id="btn_Search" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.0" prefWidth="98.0" text="Search">
+            <Region prefHeight="27.0" prefWidth="630.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btn_Search" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" text="Search">
                <HBox.margin>
                   <Insets right="10.0" top="2.0" />
                </HBox.margin>
@@ -72,11 +77,11 @@
             <Insets bottom="10.0" />
          </VBox.margin>
       </HBox>
-      <TableView fx:id="TV_Results" prefHeight="519.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+      <TableView fx:id="TV_Results" style="-fx-fixed-cell-size: 100px;" VBox.vgrow="ALWAYS">
         <columns>
-          <TableColumn fx:id="TC1_Organization_Name" prefWidth="269.0" text="Organization" />
-          <TableColumn fx:id="TC2_Description" prefWidth="461.0" text="Description" />
-            <TableColumn fx:id="TC3_City" prefWidth="269.0" text="City" />
+          <TableColumn fx:id="TC1_Organization_Name" maxWidth="807.333394408226" prefWidth="238.00007379055023" resizable="false" text="Organization" />
+            <TableColumn fx:id="TC2_City" prefWidth="130.66666412353516" resizable="false" text="City" />
+          <TableColumn fx:id="TC3_Description" maxWidth="738.6666564941406" prefWidth="738.6666564941406" resizable="false" text="Description" />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

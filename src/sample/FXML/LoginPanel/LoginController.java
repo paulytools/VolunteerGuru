@@ -18,16 +18,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import sample.FXML.HomePanel.HomeController;
+import sample.FXML.HomePanel.tabController.HomeController;
 import sample.users.database.DataBase;
 
-public class LoginController {
+public class LoginController extends HomeController {
 
 	/* ID/Variable Declarations */
 	private Stage stage;
-
 	@FXML private Button btn_Login;
-	@FXML private Button btn_SignUp;
+	@FXML private Button btn_SignUpLG;
 	@FXML private TextField userNameField;
 	@FXML private TextField passwordField;
 	@FXML private Label lbl_LoginError;
@@ -40,7 +39,7 @@ public class LoginController {
 		System.out.println("[Event](Login Clicked)");
 		boolean exists = DataBase.accountExists(userNameField.getText(), passwordField.getText());
 		if (exists) {
-      stage = (Stage) btn_Login.getScene().getWindow();
+			stage = (Stage) btn_Login.getScene().getWindow();
 			stage.close();
 			System.out.println("Valid");
 		}
@@ -53,9 +52,9 @@ public class LoginController {
 	}
 
 	@FXML //Change homePanel -> signUp.fxml
-	private void signUpBTNClicked() throws IOException {
+	private void signUpBTNClickedLG() throws IOException {
 		System.out.println("[Event](Sign-Up Clicked)");
-		stage = (Stage) btn_SignUp.getScene().getWindow();
+		stage = (Stage) btn_SignUpLG.getScene().getWindow();
 		Parent root = FXMLLoader.load(getClass().getResource("/sample/FXML/SignUpPanel/signUp.fxml"));
 		Scene scene = new Scene(root);
 		stage.setTitle("SignUp");
