@@ -1,5 +1,6 @@
 package sample.FXML.HomePanel.tabController;
 
+import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,8 +22,8 @@ import sample.users.Organization;
 public class tab2Controller extends HomeController implements Initializable {
 
   /* ID/Variable Declarations */
-  @FXML public Button btn_OpenLogin;
-  @FXML public Button btn_SignUp;
+  @FXML public JFXButton btn_OpenLogin;
+  @FXML public JFXButton btn_SignUp;
 
   @FXML private Stage stage;
   @FXML private TableView<Organization> TV_Results;

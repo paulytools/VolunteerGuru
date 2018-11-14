@@ -52,7 +52,8 @@ public class HomeController {
     public void demoUpBTNClicked() throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
-                getClass().getResource("/sample/FXML/ProfilePanels/CharityProfile/CharityProfile.fxml"));
+                getClass().getResource(
+                    "/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml"));
             Parent profile = (Parent) fxmlLoader.load();
             Stage signUpStage = new Stage();
             signUpStage.setTitle("Profile");

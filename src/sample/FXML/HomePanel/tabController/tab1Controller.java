@@ -3,6 +3,8 @@ package sample.FXML.HomePanel.tabController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import com.jfoenix.controls.JFXButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -17,9 +19,9 @@ import sample.users.Organization;
 public class tab1Controller extends HomeController implements Initializable {
 
   /* ID/Variable Declarations */
-  @FXML public Button btn_OpenLogin;
-  @FXML public Button btn_SignUp;
-  @FXML public Button btn_demo;
+  @FXML public JFXButton btn_OpenLogin;
+  @FXML public JFXButton btn_SignUp;
+  @FXML public JFXButton btn_demo;
 
   @FXML private Stage stage;
   @FXML private TableView<Organization> TV_Results;
@@ -30,12 +32,12 @@ public class tab1Controller extends HomeController implements Initializable {
 
   /* Methods / Events*/
   //Home Panel functions
-  @FXML //homePanel.fxml -> login.fxml"
+   //homePanel.fxml -> login.fxml"
   public void OpenLoginBTNClicked() throws IOException {
     super.OpenLoginBTNClicked();
   }
 
-  @FXML // homePanel.fxml -> signUp.fxml
+  // homePanel.fxml -> signUp.fxml
   public void signUpBTNClicked() throws IOException {
     super.signUpBTNClicked();
   }
