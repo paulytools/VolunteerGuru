@@ -7,10 +7,21 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import sample.users.Organization;
 
 public class charityProfileController{
   @FXML public JFXButton btn_EditProfile;
+  @FXML private Label lbl_CharityNameTitle;
+  @FXML public Label lbl_CharityName;
+  @FXML public  Label lbl_CharityBIO;
+
+  public static void setUpProfile(){
+    System.out.println("Help");
+
+}
+
 
   public void EditProfileBTNClicked() throws IOException {
     try {

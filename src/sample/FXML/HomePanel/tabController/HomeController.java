@@ -7,6 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
+import sample.FXML.ProfilePanels.CharityProfilePanels.charityProfileController;
+import sample.users.Organization;
+
 import java.io.IOException;
 
 //test
@@ -49,16 +52,20 @@ public class HomeController {
         }
     }
 
-    public void demoUpBTNClicked() throws IOException {
+    public void demoBTNClicked() throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
                 getClass().getResource(
-                    "/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml"));
+                        "/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml"));
             Parent profile = (Parent) fxmlLoader.load();
             Stage signUpStage = new Stage();
+            signUpStage.setResizable(false);
             signUpStage.setTitle("Profile");
             signUpStage.setScene(new Scene(profile));
             signUpStage.show();
+            //setup
+            charityProfileController.setUpProfile();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -69,6 +76,8 @@ public class HomeController {
         cmbox_Tag.getItems().addAll("Environment","Animals","Human Services","International");
         cmbox_Tag.setPromptText("Select a category.");
     }
+
+
 
 //    @FXML
 //    public void setLoginStatus(boolean loginStatus){

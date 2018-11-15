@@ -52,16 +52,6 @@
     -fx-shape: "M298 598l214-214 214 214h-428z";
 }
 
-/* Right Arrow */
-.scroll-bar:horizontal > .increment-button > .increment-arrow {
-    -fx-shape: "M0 428l0 -428l214 214l-214 214z";
-}
-
-/* Left Arrow */
-.scroll-bar:horizontal > .decrement-button > .decrement-arrow {
-    -fx-shape: "M214 0l0 428l-214 -214l214 -214z";
-}
-
 /*******************************************************************************
  *                                                                             *
  * Scroll Pane			                                                       *

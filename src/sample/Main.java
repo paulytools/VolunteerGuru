@@ -18,8 +18,9 @@ public class Main extends Application {
         //Set homePanel FXML
         Parent root = FXMLLoader.load(getClass().getResource("FXML/HomePanel/homePanel.fxml"));
         //initializing Home scene/layouts
+        primaryStage.setResizable(false);
         primaryStage.setTitle("Volunteer Guru 1.0");
-        primaryStage.setScene(new Scene( root, 1200,800));
+        primaryStage.setScene(new Scene( root, 1200,620));
         primaryStage.show();
 
 
