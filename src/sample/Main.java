@@ -22,8 +22,6 @@ public class Main extends Application {
         primaryStage.setTitle("Volunteer Guru 1.0");
         primaryStage.setScene(new Scene( root, 1200,620));
         primaryStage.show();
-
-
     }
 
 

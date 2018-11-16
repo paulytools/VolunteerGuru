@@ -88,6 +88,15 @@ try{
   //Organization Object list
   public ObservableList<Organization> getGroup() {
     ObservableList<Organization> Group = FXCollections.observableArrayList();
+    /*
+    While (res.result.next){
+
+    name
+    last
+    email
+    group.add(
+    }
+     */
     Group.add(new Organization("ORGANIZATION", "Boys and Girls Club of America", "", "",
             "Boys & Girls Clubs of America is a national organization of local chapters which provide after-school programs for young people",
             "Naples, FL", "password"));
