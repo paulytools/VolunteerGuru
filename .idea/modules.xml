@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VolunteerGurus.iml" filepath="$PROJECT_DIR$/VolunteerGurus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GIT_Guru.iml" filepath="$PROJECT_DIR$/GIT_Guru.iml" />
     </modules>
   </component>
 </project>

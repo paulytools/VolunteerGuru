@@ -58,6 +58,7 @@ public class LoginController extends HomeController {
 		Parent root = FXMLLoader.load(getClass().getResource("/sample/FXML/SignUpPanel/signUp.fxml"));
 		Scene scene = new Scene(root);
 		stage.setTitle("SignUp");
+		stage.setResizable(false);
 		stage.setScene(scene);
 	}
 

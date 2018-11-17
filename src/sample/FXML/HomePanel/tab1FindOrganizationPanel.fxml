@@ -28,11 +28,6 @@
              </Label>
 
             <Region prefHeight="53.0" prefWidth="373.0" HBox.hgrow="ALWAYS" />
-            <JFXButton id="JFXBTN" fx:id="btn_Demo" buttonType="RAISED" onAction="#demoBTNClicked" stylesheets="@../../Style.css" text="Demo">
-               <HBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
-               </HBox.margin>
-            </JFXButton>
             <JFXButton id="JFXBTN" fx:id="btn_OpenLogin" buttonType="RAISED" onAction="#OpenLoginBTNClicked" stylesheets="@../../Style.css" text="Login">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />

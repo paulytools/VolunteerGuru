@@ -56,9 +56,7 @@ public class tab1Controller extends HomeController implements Initializable {
   public void signUpBTNClicked() throws IOException {
     super.signUpBTNClicked();
   }
-public void demoBTNClicked() throws IOException{
-    super.demoBTNClicked();
-}
+
 
   @Override
   public void initialize(URL url, ResourceBundle resources) {
@@ -78,7 +76,7 @@ public void demoBTNClicked() throws IOException{
       public void changed(ObservableValue<? extends Organization> observable, Organization oldValue, Organization newValue) {
         System.out.println(newValue.getUserName());
 try{
-  demoBTNClicked();
+  Org_Selected_Clicked();
 } catch (IOException e) {
   e.printStackTrace();
 } }

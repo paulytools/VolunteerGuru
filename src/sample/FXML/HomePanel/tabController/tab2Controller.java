@@ -4,6 +4,8 @@ import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -54,6 +56,8 @@ public class tab2Controller extends HomeController implements Initializable {
     TC3_Description.setCellValueFactory(new PropertyValueFactory<Organization, String>(
         "email"));
     TV_Results.setItems(getGroup());
+
+
   }
 
   public ObservableList<Organization> getGroup() {

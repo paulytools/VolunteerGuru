@@ -8,6 +8,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.ResourceBundle;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -50,15 +52,26 @@ public class tab3Controller extends HomeController implements Initializable {
 
 @Override
   public void initialize(URL url, ResourceBundle resources) {
-    setUpComboBox();
-    TC1_Volunteer_Name.setCellValueFactory(new PropertyValueFactory<Volunteer, String>(
-        "userName"));
-    TC2_CityVolunteer.setCellValueFactory(new PropertyValueFactory<Volunteer, String>(
-        "address"));
-    TC3_DescriptionVolunteer.setCellValueFactory(new PropertyValueFactory<Volunteer, String>(
-        "email"));
-    TV_Results.setItems(getGroup());
-  }
+  setUpComboBox();
+  TC1_Volunteer_Name.setCellValueFactory(new PropertyValueFactory<Volunteer, String>(
+      "userName"));
+  TC2_CityVolunteer.setCellValueFactory(new PropertyValueFactory<Volunteer, String>(
+      "address"));
+  TC3_DescriptionVolunteer.setCellValueFactory(new PropertyValueFactory<Volunteer, String>(
+      "email"));
+  TV_Results.setItems(getGroup());
+
+  TV_Results.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Volunteer>() {
+    @Override
+    public void changed(ObservableValue<? extends Volunteer> observable, Volunteer oldValue, Volunteer newValue) {
+      System.out.println(newValue.getUserName());
+      try{
+        VOL_Selected_Clicked();
+      } catch (IOException e) {
+        e.printStackTrace();
+      } }
+  });
+}
 
   public ObservableList<Volunteer> getGroup() {
       List<String> Name =  Arrays.asList("Roberts","Cooper","Anderson","Kim","Williams","Rex",

@@ -107,3 +107,7 @@
     -fx-font-weight: bold;
 
 }
+
+#6Profile-Icon-Grid> *:hover {
+    -fx-background-color: #FFFF00;
+}

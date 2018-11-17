@@ -45,6 +45,7 @@ public class HomeController {
             Parent SignUpRoot = (Parent) fxmlLoader.load();
             Stage signUpStage = new Stage();
             signUpStage.setTitle("SignUp");
+            signUpStage.setResizable(false);
             signUpStage.setScene(new Scene(SignUpRoot));
             signUpStage.show();
         } catch (Exception e) {
@@ -52,14 +53,13 @@ public class HomeController {
         }
     }
 
-    public void demoBTNClicked() throws IOException {
+    public void Org_Selected_Clicked() throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
                 getClass().getResource(
                         "/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml"));
             Parent profile = (Parent) fxmlLoader.load();
             Stage signUpStage = new Stage();
-            signUpStage.setResizable(false);
             signUpStage.setTitle("Profile");
             signUpStage.setScene(new Scene(profile));
             signUpStage.show();
@@ -70,7 +70,23 @@ public class HomeController {
             e.printStackTrace();
         }
     }
+    public void VOL_Selected_Clicked() throws IOException {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(
+                getClass().getResource(
+                    "/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.FXML"));
+            Parent profile = (Parent) fxmlLoader.load();
+            Stage signUpStage = new Stage();
+            signUpStage.setTitle("Profile");
+            signUpStage.setScene(new Scene(profile));
+            signUpStage.show();
+            //setup
+            charityProfileController.setUpProfile();
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     @FXML
     public void setUpComboBox() {
         cmbox_Tag.getItems().addAll("Environment","Animals","Human Services","International");

@@ -39,7 +39,7 @@
                <panes>
                   <TitledPane depthTest="ENABLE" expanded="false" focusTraversable="false" maxHeight="1000000.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="804.0" text="Change Profile Picture">
                      <content>
-                        <GridPane prefWidth="802.0">
+                        <GridPane id="Profile-Icon-Grid" prefWidth="802.0" stylesheets="@../../../Style.css">
                            <columnConstraints>
                               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -51,44 +51,44 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <ImageView fitHeight="100.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <image>
-                                    <Image url="@../../../media/User.png" />
+                                    <Image url="@../../../media/User5.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                                  <image>
-                                    <Image url="@../../../media/User.png" />
+                                    <Image url="@../../../media/User3png.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                                  <image>
-                                    <Image url="@../../../media/User.png" />
+                                    <Image url="@../../../media/User4.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                                  <image>
-                                    <Image url="@../../../media/User.png" />
+                                    <Image url="@../../../media/User2.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <image>
-                                    <Image url="@../../../media/User.png" />
+                                    <Image url="@../../../media/User6.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <image>
-                                    <Image url="@../../../media/User.png" />
+                                    <Image url="@../../../media/User9.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <image>
-                                    <Image url="@../../../media/User.png" />
+                                    <Image url="@../../../media/User8.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                                  <image>
-                                    <Image url="@../../../media/User.png" />
+                                    <Image url="@../../../media/User7.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">

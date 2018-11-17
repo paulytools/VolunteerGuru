@@ -18,7 +18,6 @@ public class charityProfileController{
   @FXML public  Label lbl_CharityBIO;
 
   public static void setUpProfile(){
-    System.out.println("Help");
 
 }
 
