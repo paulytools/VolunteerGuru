@@ -1,26 +1,19 @@
 package sample.FXML.HomePanel.tabController;
 
+import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import com.jfoenix.controls.JFXButton;
-import com.sun.org.apache.xpath.internal.operations.Or;
-import javafx.beans.property.StringProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import javafx.util.Callback;
 import sample.users.Organization;
 
 public class tab1Controller extends HomeController implements Initializable {
@@ -62,26 +55,33 @@ public class tab1Controller extends HomeController implements Initializable {
   public void initialize(URL url, ResourceBundle resources) {
     setUpComboBox();
     TC1_Organization_Name.setCellValueFactory(new PropertyValueFactory<Organization, String>(
-            "userName"));
+        "userName"));
     TC2_City.setCellValueFactory(new PropertyValueFactory<Organization, String>(
-            "address"));
+        "address"));
     TC3_Description.setCellValueFactory(new PropertyValueFactory<Organization, String>(
-            "email"));
+        "email"));
     TV_Results.setItems(getGroup());
 
-
     //Row Selected listener
-    TV_Results.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Organization>() {
+    TV_Results.setOnMouseClicked(new EventHandler<MouseEvent>() {
       @Override
-      public void changed(ObservableValue<? extends Organization> observable, Organization oldValue, Organization newValue) {
-        System.out.println(newValue.getUserName());
-try{
-  Org_Selected_Clicked();
-} catch (IOException e) {
-  e.printStackTrace();
-} }
+      public void handle(MouseEvent click) {
+        if (click.getClickCount() == 2) {
+          //Use ListView's getSelected Item
+          Organization currentItemSelected = TV_Results.getSelectionModel()
+              .getSelectedItem();
+          System.out.println(currentItemSelected.toString());
+          //use this to do whatever you want to. Open Link etc.
+          try {
+            Org_Selected_Clicked(currentItemSelected);
+          } catch (IOException e) {
+            e.printStackTrace();
+          }
+        }
+      }
     });
   }
+
 
   //Organization Object list
   public ObservableList<Organization> getGroup() {
@@ -96,16 +96,16 @@ try{
     }
      */
     Group.add(new Organization("ORGANIZATION", "Boys and Girls Club of America", "", "",
-            "Boys & Girls Clubs of America is a national organization of local chapters which provide after-school programs for young people",
-            "Naples, FL", "password"));
+        "Boys & Girls Clubs of America is a national organization of local chapters which provide after-school programs for young people",
+        "Naples, FL", "password"));
     Group.add(new Organization("ORGANIZATION", "Goodwill", "", "",
-            "Goodwill Industries International Inc.,"
-                    + " or shortened to Goodwill, is an American nonprofit 501 organization that provides "
-                    + "job training, employment placement services, and other community-based programs for people who have barriers preventing them from otherwise obtaining a job. ",
-            "Fort Myers, FL", "f"));
+        "Goodwill Industries International Inc.,"
+            + " or shortened to Goodwill, is an American nonprofit 501 organization that provides "
+            + "job training, employment placement services, and other community-based programs for people who have barriers preventing them from otherwise obtaining a job. ",
+        "Fort Myers, FL", "f"));
     Group.add(new Organization("ORGANIZATION", "Direct Relief", "", "",
-            "Direct Relief is a nonprofit, nonpartisan organization with a stated mission to “improve the health and lives of people affected by poverty or emergency situations by mobilizing and providing essential medical resources needed for their care",
-            "N/A", "f"));
+        "Direct Relief is a nonprofit, nonpartisan organization with a stated mission to “improve the health and lives of people affected by poverty or emergency situations by mobilizing and providing essential medical resources needed for their care",
+        "N/A", "f"));
 
     return Group;
   }

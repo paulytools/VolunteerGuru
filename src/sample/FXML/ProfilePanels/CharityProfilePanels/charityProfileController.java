@@ -15,12 +15,11 @@ import javafx.stage.Stage;
 
 public class charityProfileController implements Initializable {
   @FXML public JFXButton btn_EditProfile;
-  @FXML private Label lbl_CharityNameTitle;
   @FXML public Label lbl_CharityName;
-  @FXML public  Label lbl_CharityBIO;
-  public static void setUpProfile(){
+  @FXML private Label lbl_CharityAddress;
+  @FXML private Label lbl_CharityContact;
+  @FXML private  Label lbl_CharityBIO;
 
-}
 
 
   public void EditProfileBTNClicked() throws IOException {
@@ -30,6 +29,7 @@ public class charityProfileController implements Initializable {
               "/sample/FXML/ProfilePanels/CharityProfilePanels/charityEdit.fxml"));
       Parent profile = (Parent) fxmlLoader.load();
       Stage test = new Stage();
+      test.setResizable(false);
       test.setTitle("Edit Profile");
       test.setScene(new Scene(profile));
       test.show();
@@ -45,6 +45,14 @@ public class charityProfileController implements Initializable {
   public void initialize(URL location, ResourceBundle resources) {
 
 
-
  }
+
+
+
+  public void setAccount(String name,String address, String Contact,String Bio) {
+    lbl_CharityName.setText(name);
+    lbl_CharityAddress.setText(address);
+    lbl_CharityContact.setText(Contact);
+    lbl_CharityBIO.setText(Contact);// need bio
+  }
 }

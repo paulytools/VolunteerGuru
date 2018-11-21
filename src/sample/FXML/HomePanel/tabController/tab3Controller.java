@@ -13,6 +13,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -22,6 +23,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import sample.users.Organization;
 import sample.users.User;
@@ -60,15 +62,22 @@ public class tab3Controller extends HomeController implements Initializable {
       "email"));
   TV_Results.setItems(getGroup());
 
-  TV_Results.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Volunteer>() {
+  TV_Results.setOnMouseClicked(new EventHandler<MouseEvent>() {
     @Override
-    public void changed(ObservableValue<? extends Volunteer> observable, Volunteer oldValue, Volunteer newValue) {
-      System.out.println(newValue.getUserName());
-      try{
-        VOL_Selected_Clicked();
-      } catch (IOException e) {
-        e.printStackTrace();
-      } }
+    public void handle(MouseEvent click) {
+      if (click.getClickCount() == 2) {
+        //Use ListView's getSelected Item
+        Volunteer currentItemSelected = TV_Results.getSelectionModel()
+            .getSelectedItem();
+        System.out.println(currentItemSelected.toString());
+        //use this to do whatever you want to. Open Link etc.
+        try {
+          VOL_Selected_Clicked(currentItemSelected);
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
+      }
+    }
   });
 }
 

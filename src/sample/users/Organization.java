@@ -6,4 +6,8 @@ public class Organization extends User {
 		super(type, userName, firstName, lastName, email, address, password);
 	}
 
+	@Override
+	public String toString() {
+		return getUserName();
+	}
 }

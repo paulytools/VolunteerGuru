@@ -7,5 +7,9 @@ public class Volunteer extends User {
 	}
 
 
+	@Override
+	public String toString() {
+		return getUserName();
+	}
 
 }

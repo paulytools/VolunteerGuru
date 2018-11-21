@@ -8,9 +8,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 import sample.FXML.ProfilePanels.CharityProfilePanels.charityProfileController;
+import sample.FXML.ProfilePanels.VolunteerProfile.volunteerProfileController;
 import sample.users.Organization;
 
 import java.io.IOException;
+import sample.users.Volunteer;
 
 //test
 public class HomeController {
@@ -22,6 +24,8 @@ public class HomeController {
     @FXML public Button btn_demo;
     public boolean loginStatus = false;
 
+
+
     @FXML
     public void OpenLoginBTNClicked() throws IOException {
         System.out.println("[Event](OPEN-Login Clicked)");
@@ -30,6 +34,7 @@ public class HomeController {
                     getClass().getResource("/sample/FXML/LoginPanel/login.fxml"));
             Parent LoginRoot = (Parent) fxmlLoader.load();
             Stage loginStage = new Stage();
+            loginStage.setResizable(false);
             loginStage.setTitle("Login");
             loginStage.setScene(new Scene(LoginRoot));
             loginStage.show();
@@ -53,36 +58,36 @@ public class HomeController {
         }
     }
 
-    public void Org_Selected_Clicked() throws IOException {
+    public void Org_Selected_Clicked(Organization org) throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
                 getClass().getResource(
-                        "/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml"));
+                    "/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml"));
             Parent profile = (Parent) fxmlLoader.load();
+            charityProfileController Controller = fxmlLoader.getController();
+            Controller.setAccount(org.getUserName(),org.getAddress(),org.getEmail(),org.getEmail());
             Stage signUpStage = new Stage();
             signUpStage.setTitle("Profile");
             signUpStage.setScene(new Scene(profile));
-            signUpStage.show();
-            //setup
-            charityProfileController.setUpProfile();
 
+            signUpStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    public void VOL_Selected_Clicked() throws IOException {
+    public void VOL_Selected_Clicked(Volunteer vol) throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
                 getClass().getResource(
-                    "/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.FXML"));
+                    "/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml"));
             Parent profile = (Parent) fxmlLoader.load();
+            volunteerProfileController Controller = fxmlLoader.getController();
+            Controller.setAccount(vol.getUserName(),vol.getAddress(),vol.getEmail(),vol.getEmail());
             Stage signUpStage = new Stage();
             signUpStage.setTitle("Profile");
             signUpStage.setScene(new Scene(profile));
-            signUpStage.show();
-            //setup
-            charityProfileController.setUpProfile();
 
+            signUpStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
