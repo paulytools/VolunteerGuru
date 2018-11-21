@@ -1,5 +1,6 @@
 package sample.FXML.HomePanel.tabController;
 
+import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -29,15 +30,13 @@ import sample.users.Volunteer;
 public class tab3Controller extends HomeController implements Initializable {
 
   /* ID/Variable Declarations */
-  @FXML public Button btn_OpenLogin;
-  @FXML public Button btn_SignUp;
-
+  @FXML public JFXButton btn_OpenLogin;
+  @FXML public JFXButton btn_SignUp;
   @FXML private Stage stage;
   @FXML private TableView<Volunteer> TV_Results;
   @FXML private TableColumn<Volunteer, String> TC1_Volunteer_Name;
   @FXML private TableColumn<Volunteer, String> TC2_CityVolunteer;
   @FXML private TableColumn<Volunteer, String> TC3_DescriptionVolunteer;
-
 
   /* Methods / Events*/
 

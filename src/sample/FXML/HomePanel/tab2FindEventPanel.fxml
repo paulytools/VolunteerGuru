@@ -18,7 +18,7 @@
       <HBox prefHeight="47.0" prefWidth="600.0">
          <children>
 
-             <Label minWidth="-Infinity" text="Find Events">
+             <Label id="lbl_HomeScreen" minWidth="-Infinity" text="Find Events">
                <font>
                   <Font name="Verdana Bold" size="30.0" />
                </font>
@@ -80,6 +80,9 @@
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
       </TableView>
    </children>
 </VBox>

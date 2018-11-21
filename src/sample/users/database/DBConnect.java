@@ -6,12 +6,13 @@ public class DBConnect {
 
     public static final String DRIVER = "org.apache.derby.jdbc.EmbeddedDriver";
     //If you want to run this program, you need to put your DBuser path into the JDBC_URL variable
-    public static final String JDBC_URL = "jdbc:derby:C:\\Users\\Charly Garcia\\Desktop\\VolunteerGurus\\library\\DBuser";
+    public static final String JDBC_URL = "jdbc:derby:C:\\Users\\Carlos Perez\\OneDrive - Florida "
+        + "Gulf Coast University\\CDA 3104\\GIT_Guru\\library\\DBuser;";
     Connection conn;
 
     public DBConnect() {
         try {
-            this.conn = DriverManager.getConnection(JDBC_URL);
+            Connection conn = DriverManager.getConnection(JDBC_URL);
             if (this.conn != null) {
                 System.out.println("Connected!");
             }

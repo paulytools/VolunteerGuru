@@ -25,7 +25,6 @@ public class signUpController implements Initializable {
 	private ToggleGroup RoleToggle;
 	private Stage stage;
 
-
 	@FXML private JFXRadioButton rbtn_Volunteer;
 	@FXML private JFXRadioButton rbtn_Charity;
 	@FXML private Button btn_Submit;
@@ -118,7 +117,7 @@ public class signUpController implements Initializable {
 		this.rbtn_Volunteer.setSelected(true);
 		this.txtFL_UserHandle.requestFocus();
 
-		cmbox_Tag1.getItems().addAll("...","Environment","Animals","Human Services","International");
+		cmbox_Tag1.getItems().addAll("...","Environment","Animals","Human Services","International","Health","Education","Art/Culture","Fitness","Youth");
 		cmbox_Tag1.setPromptText("Select a category.");
 		cmbox_Tag2.getItems().addAll("...","Environment","Animals","Human Services","International");
 		cmbox_Tag2.setPromptText("Select a category.");

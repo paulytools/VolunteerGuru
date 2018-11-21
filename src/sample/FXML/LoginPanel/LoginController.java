@@ -10,6 +10,8 @@
 package sample.FXML.LoginPanel;
 
 import java.io.IOException;
+
+import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -25,8 +27,8 @@ public class LoginController extends HomeController {
 
 	/* ID/Variable Declarations */
 	private Stage stage;
-	@FXML private Button btn_Login;
-	@FXML private Button btn_SignUpLG;
+	@FXML private JFXButton btn_Login;
+	@FXML private JFXButton btn_SignUpLG;
 	@FXML private TextField userNameField;
 	@FXML private TextField passwordField;
 	@FXML private Label lbl_LoginError;

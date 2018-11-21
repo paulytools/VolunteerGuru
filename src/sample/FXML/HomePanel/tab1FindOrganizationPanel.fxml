@@ -18,9 +18,9 @@
       <HBox prefHeight="47.0" prefWidth="600.0">
          <children>
 
-             <Label minWidth="-Infinity" text="Find Organization">
+             <Label id="lbl_HomeScreen" minWidth="-Infinity" text="Find Organization">
                <font>
-                  <Font name="Verdana Bold" size="30.0" />
+                  <Font name="Georgia Bold" size="30.0" />
                </font>
                <HBox.margin>
                   <Insets bottom="5.0" left="10.0" right="5.0" top="10.0" />

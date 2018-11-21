@@ -3,154 +3,92 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXMasonryPane?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.ProfilePanels.CharityProfilePanels.charityProfileController">
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.ProfilePanels.CharityProfilePanels.charityProfileController">
    <children>
-      <HBox prefHeight="213.0" prefWidth="446.0">
+      <Pane prefHeight="605.0" prefWidth="1000.0">
          <children>
-            <ImageView id="ProfileIMGView" fitHeight="175.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+            <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="661.0" layoutY="14.0" prefWidth="150.0" text="Follow" />
+            <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="825.0" layoutY="14.0" prefWidth="150.0" text="Message" />
+            <ImageView id="ProfileIMGView" fitHeight="175.0" fitWidth="172.0" layoutX="3.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../media/User2.png" />
+                  <Image url="@../../../media/Org_User/User.png" />
                </image>
-               <HBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </HBox.margin></ImageView>
-            <VBox prefHeight="213.0" prefWidth="538.0">
+            </ImageView>
+            <Label id="lbl_HomeScreen" alignment="BOTTOM_LEFT" contentDisplay="CENTER" layoutX="14.0" layoutY="9.0" prefHeight="58.0" prefWidth="647.0" text="[Charity Name PlaceHolder] " wrapText="true">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="91.0" text="[Address]" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="121.0" text="[Contact Info [Email/Phone]]" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="181.0" text="[BIO]" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton id="JFXBTN" fx:id="btn_EditProfile" buttonType="RAISED" layoutX="-1.0" layoutY="260.0" onAction="#EditProfileBTNClicked" prefHeight="21.0" prefWidth="180.0" text="Edit Profile" />
+            <StackPane layoutX="650.0" layoutY="79.0" prefHeight="521.0" prefWidth="350.0">
                <children>
-                  <Label alignment="BOTTOM_LEFT" prefHeight="58.0" prefWidth="500.0" text="[Charity Name PlaceHolder] " wrapText="true" VBox.vgrow="ALWAYS">
-                     <font>
-                        <Font size="40.0" />
-                     </font>
-                  </Label>
-                  <Label text="[Address]" wrapText="true">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <Label text="[Contact Info [Email/Phone]]" wrapText="true">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <Label text="[BIO]" wrapText="true">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
+                  <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="350.0">
+                     <content>
+                        <JFXMasonryPane prefHeight="70.0" prefWidth="338.0">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <children>
+                              <Pane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: yellow;" />
+                              <Pane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: yellow;" />
+                              <Pane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: yellow;" />
+                           </children>
+                        </JFXMasonryPane>
+                     </content>
+                  </ScrollPane>
                </children>
-            </VBox>
-            <Region prefHeight="193.0" prefWidth="3.0" HBox.hgrow="ALWAYS" />
-            <Pane prefHeight="193.0" prefWidth="244.0">
-               <children>
-                  <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="6.0" layoutY="14.0" prefWidth="100.0" style="-fx-background-color: yellow;" text="Follow" />
-                  <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="127.0" layoutY="14.0" prefWidth="100.0" style="-fx-background-color: yellow;" text="Message" />
-                  <Label layoutY="58.0" text="Followers" />
-                  <TextField layoutY="75.0" />
-               </children>
-            </Pane>
+            </StackPane>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="14.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Icons/FacebookICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="176.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Icons/FacebookICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="341.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Icons/FacebookICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="500.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Icons/FacebookICON.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="650.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Text>
          </children>
-      </HBox>
-      <JFXButton id="JFXBTN" fx:id="btn_EditProfile" buttonType="RAISED" onAction="#EditProfileBTNClicked" prefHeight="21.0" prefWidth="180.0" style="-fx-background-color: yellow;" text="Edit Profile" />
-      <Label alignment="CENTER" contentDisplay="TOP" prefHeight="17.0" prefWidth="180.0" text="Events" />
-      <StackPane prefHeight="360.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
-         <children>
-            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefHeight="347.0" prefWidth="1000.0" StackPane.alignment="CENTER">
-               <content>
-                  <JFXMasonryPane maxWidth="1.7976931348623157E308" prefHeight="362.0" prefWidth="995.0">
-                     <children>
-                        <Pane style="-fx-background-color: cyan;">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="295.0" style="-fx-background-color: blue;" text="Label" textAlignment="CENTER">
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                              </Label>
-                              <Button layoutX="83.0" layoutY="251.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Button" />
-                              <Label layoutX="28.0" layoutY="72.0" text="Label" />
-                              <DatePicker editable="false" layoutX="107.0" layoutY="60.0" promptText="48484/984" />
-                           </children>
-                        </Pane>
-                        <Pane style="-fx-background-color: cyan;">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="295.0" style="-fx-background-color: blue;" text="Label" textAlignment="CENTER">
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                              </Label>
-                              <Button layoutX="83.0" layoutY="251.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Button" />
-                              <Label layoutX="28.0" layoutY="72.0" text="Label" />
-                              <DatePicker layoutX="107.0" layoutY="60.0" promptText="n" />
-                           </children>
-                        </Pane>
-                        <Pane style="-fx-background-color: cyan;">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="295.0" style="-fx-background-color: blue;" text="Label" textAlignment="CENTER">
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                              </Label>
-                              <Button layoutX="83.0" layoutY="251.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Button" />
-                              <Label layoutX="28.0" layoutY="72.0" text="Label" />
-                              <DatePicker layoutX="107.0" layoutY="60.0" promptText="n" />
-                           </children>
-                        </Pane>
-                        <Pane style="-fx-background-color: cyan;">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="295.0" style="-fx-background-color: blue;" text="Label" textAlignment="CENTER">
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                              </Label>
-                              <Button layoutX="83.0" layoutY="251.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Button" />
-                              <Label layoutX="28.0" layoutY="72.0" text="Label" />
-                              <DatePicker layoutX="107.0" layoutY="60.0" promptText="n" />
-                           </children>
-                        </Pane>
-                        <Pane style="-fx-background-color: cyan;">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="295.0" style="-fx-background-color: blue;" text="Label" textAlignment="CENTER">
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                              </Label>
-                              <Button layoutX="83.0" layoutY="251.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Button" />
-                              <Label layoutX="28.0" layoutY="72.0" text="Label" />
-                              <DatePicker layoutX="107.0" layoutY="60.0" promptText="n" />
-                           </children>
-                        </Pane>
-                        <Pane opacity="0.0" style="-fx-background-color: cyan;">
-                           <children>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="295.0" style="-fx-background-color: blue;" text="Label" textAlignment="CENTER">
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                              </Label>
-                              <Button layoutX="83.0" layoutY="251.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Button" />
-                              <Label layoutX="28.0" layoutY="72.0" text="Label" />
-                              <DatePicker layoutX="107.0" layoutY="60.0" promptText="n" />
-                           </children>
-                        </Pane>
-                     </children>
-                     <padding>
-                        <Insets left="50.0" />
-                     </padding>
-                  </JFXMasonryPane>
-               </content>
-            </ScrollPane>
-         </children>
-      </StackPane>
+      </Pane>
    </children>
 </VBox>

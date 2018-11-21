@@ -19,7 +19,7 @@
 
 <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="700.0" stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.SignUpPanel.signUpController">
    <children>
-      <Label text="Creating a Guru Account" underline="true">
+      <Label id="lbl_HomeScreen" text="Creating a Guru Account" underline="true">
          <font>
             <Font size="40.0" />
          </font>
