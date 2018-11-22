@@ -6,7 +6,7 @@ public class DBConnect {
 
     public static final String DRIVER = "org.apache.derby.jdbc.EmbeddedDriver";
     //relative path
-    public static final String JDBC_URL = "jdbc:derby:library\\DBuser;";
+    public static final String JDBC_URL = "jdbc:derby:library\\DBuser";
     Connection conn;
 
     public DBConnect() {
