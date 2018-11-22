@@ -5,9 +5,8 @@ import java.sql.*;
 public class DBConnect {
 
     public static final String DRIVER = "org.apache.derby.jdbc.EmbeddedDriver";
-    //If you want to run this program, you need to put your DBuser path into the JDBC_URL variable
-    public static final String JDBC_URL = "jdbc:derby:C:\\Users\\Carlos Perez\\OneDrive - Florida "
-        + "Gulf Coast University\\CDA 3104\\GIT_Guru\\library\\DBuser;";
+    //relative path
+    public static final String JDBC_URL = "jdbc:derby:library\\DBuser;";
     Connection conn;
 
     public DBConnect() {
