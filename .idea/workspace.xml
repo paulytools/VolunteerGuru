@@ -1,41 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/sample/users/database/DBConnect.java" line="53" />
+    <bookmark url="file://$PROJECT_DIR$/src/sample/users/database/DBConnect.java" line="84" />
+    <bookmark url="file://$PROJECT_DIR$/src/sample/users/sql_database/JdbcIntegration.java" line="11" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1c76cd6-a8dd-499e-9f9b-f70d024e47b4" name="Default Changelist" comment="[Project 1.0] 11/20&#10;-Style update">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/derby.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/derby__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/users/sql_database/JdbcIntegration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/users/sql_database/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VolunteerGurus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VolunteerGurus.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/DBuser/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/library/DBuser/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/DBuser/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/library/DBuser/log/log.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/DBuser/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/library/DBuser/log/log1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/DBuser/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/library/DBuser/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/homePanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/homePanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab1FindOrganizationPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab1FindOrganizationPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab2FindEventPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab2FindEventPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab3FindVolunteerPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab3FindVolunteerPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab1Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab2Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab3Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab3Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/LoginPanel/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/LoginPanel/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/LoginPanel/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/LoginPanel/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/SignUpPanel/signUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/SignUpPanel/signUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/SignUpPanel/signUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/SignUpPanel/signUpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/media/userProfilePic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/users/Organization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/users/Organization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/users/Volunteer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/users/Volunteer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/users/database/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/users/database/DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/users/database/DbDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/users/database/DbDriver.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -159,6 +141,39 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-883199206">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="fxml" value="1" />
+          <entry key="java" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="3266" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="3265" />
+          <entry key="SQL" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="VolunteerGurus" />
@@ -168,7 +183,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="238">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -189,26 +204,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/users/database/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="68">
               <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/users/database/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+            <state relative-caret-position="357">
+              <caret line="29" column="77" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="77" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/users/sql_database/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/users/sql_database/JdbcIntegration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab2Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tab2FindEventPanel.fxml">
+          <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/users/database/DbDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -256,6 +307,8 @@
         <option value="$PROJECT_DIR$/src/sample/Style.css" />
         <option value="$PROJECT_DIR$/src/sample/users/database/DbDriver.java" />
         <option value="$PROJECT_DIR$/src/sample/users/database/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/sample/users/sql_database/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/users/sql_database/JdbcIntegration.java" />
       </list>
     </option>
   </component>
@@ -271,11 +324,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="435" />
-    <option name="y" value="-11" />
-    <option name="width" value="903" />
-    <option name="height" value="1031" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="933" />
+    <option name="width" value="994" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -285,7 +337,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,18 +406,26 @@
               <item name="users" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="sql_database" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542861477086" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542900037485" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BooksDBij" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -457,6 +516,8 @@
       <workItem from="1542817196101" duration="33000" />
       <workItem from="1542817335177" duration="519000" />
       <workItem from="1542852350329" duration="6331000" />
+      <workItem from="1542890966329" duration="994000" />
+      <workItem from="1542892418131" duration="6037000" />
     </task>
     <task id="LOCAL-00001" summary="[Project 1.0]&#10;-Sign Up panel redesign&#10;-Profile icon added">
       <created>1542476017425</created>
@@ -476,23 +537,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51754000" />
+    <option name="totallyTimeSpent" value="58785000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="933" y="0" width="994" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74689823" visible="true" weight="0.20728745" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74689823" weight="0.46252677" />
       <window_info id="Structure" order="1" sideWeight="0.25310174" side_tool="true" weight="0.53457" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32955465" />
-      <window_info anchor="bottom" id="CheckStyle" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" auto_hide="true" x="212" y="457" width="953" height="228" id="Run" order="2" sideWeight="0.7700405" weight="0.27224198" />
+      <window_info anchor="bottom" auto_hide="true" x="212" y="457" width="953" height="228" id="Run" order="2" sideWeight="0.7700405" weight="0.27223426" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -501,10 +561,11 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.22995952" side_tool="true" weight="0.2725632" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4979757" weight="0.32562277" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4979757" weight="0.3253796" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="12" weight="0.33333334" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49946696" weight="0.32917964" />
       <window_info anchor="bottom" id="SQL Generator" order="14" sideWeight="0.49946696" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="CheckStyle" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.5202247" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -512,7 +573,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.09071274" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.0" />
       <window_info anchor="right" id="Database" order="8" weight="0.3288364" />
     </layout>
   </component>
@@ -539,10 +600,6 @@
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/VolunteerProfile/volunteerProfileController.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/VolunteerProfile/volunteerProfileEdit.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tab2FindEventPanel.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tab3FindVolunteerPanel.fxml">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -557,13 +614,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/derby.log" />
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab2Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab3Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -637,16 +687,9 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="238">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -654,10 +697,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/users/database/DataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="68">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab2Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tab2FindEventPanel.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/users/database/DbDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -665,17 +733,27 @@
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/users/database/DbDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/users/sql_database/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/users/database/DBConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="29" column="77" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/users/sql_database/JdbcIntegration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
