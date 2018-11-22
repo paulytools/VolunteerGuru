@@ -30,9 +30,12 @@ public class signUpController implements Initializable {
 	@FXML private Button btn_Submit;
 	@FXML private Label lbl_UserHandle;
 	@FXML private Label lbl_SignUpError;
+	//input fields
 	@FXML private TextField txtFL_UserHandle;
 	@FXML private TextField txtFL_FirstName;
 	@FXML private TextField txtFL_LastName;
+	@FXML private TextField txtFL_About;
+	@FXML private ComboBox cmbox_Tag1, cmbox_Tag2, cmbox_Tag3;
 	@FXML private TextField txtFL_Email;
 	@FXML private TextField txtFL_Address;
 	@FXML private TextField txtFL_Password;
@@ -40,10 +43,6 @@ public class signUpController implements Initializable {
 
 	@FXML private  Label lbl_Tags;
 	@FXML private  Label lbl_About;
-	@FXML private  TextField txtFL_About;
-	@FXML private ComboBox cmbox_Tag1;
-	@FXML private ComboBox cmbox_Tag2;
-	@FXML private ComboBox cmbox_Tag3;
 
 
 	private void saveUser() throws IOException {
@@ -98,12 +97,12 @@ public class signUpController implements Initializable {
 	@FXML
 	public void radioButtonChanged() {
 		if (this.RoleToggle.getSelectedToggle().equals(this.rbtn_Volunteer)) {
-			lbl_UserHandle.setText("Username:");
+			lbl_UserHandle.setText("[*] Username:");
 			lbl_About.setText("About Me:");
 			lbl_Tags.setText("My Interests:");
 		}
 		if (this.RoleToggle.getSelectedToggle().equals(this.rbtn_Charity)) {
-			lbl_UserHandle.setText("Charity's Name:");
+			lbl_UserHandle.setText("[*] Charity's Name:");
 			lbl_About.setText("Description:");
 			lbl_Tags.setText("Focus:");
 		}
