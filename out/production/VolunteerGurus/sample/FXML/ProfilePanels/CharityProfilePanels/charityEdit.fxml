@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" prefHeight="614.0" prefWidth="804.0" stylesheets="@../../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.ProfilePanels.CharityProfilePanels.charityEditController">
+   <children>
+      <ImageView fx:id="IVew_CurrentEdit" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../media/Org_User/User.png" />
+         </image>
+      </ImageView>
+      <Accordion prefHeight="685.0" prefWidth="870.0">
+         <panes>
+            <TitledPane depthTest="ENABLE" expanded="false" focusTraversable="false" maxHeight="1000000.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="804.0" text="Change Profile Picture">
+               <content>
+                  <GridPane id="GP_EditProfilePic" fx:id="GP_EditProfilePic" prefWidth="802.0" stylesheets="@../../../Style.css">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="IVew_User5" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../../media/Org_User/User5.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="IVew_User3" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../../../media/Org_User/User3png.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="IVew_User4" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../../media/Org_User/User4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="IVew_User2" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../../../media/Org_User/User2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="IVew_User6" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../../media/Org_User/User6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="IVew_User9" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../../../media/Org_User/User9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="IVew_User8" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../../../media/Org_User/User8.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="IVew_User7" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../../../media/Org_User/User7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="IVew_User1" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/Org_User/User.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </content>
+            </TitledPane>
+            <TitledPane expanded="false" prefHeight="39.0" prefWidth="793.0" text="Change Your Information">
+               <content>
+                  <Pane prefHeight="396.0" prefWidth="847.0">
+                     <children>
+                        <JFXTabPane layoutX="-6.0" prefHeight="397.0" prefWidth="810.0">
+                           <tabs>
+                              <Tab text=" Organization Infomation">
+                                 <content>
+                                    <Pane prefHeight="360.0" prefWidth="811.0">
+                                       <children>
+                                          <GridPane layoutX="14.0" layoutY="14.0" prefHeight="336.0" prefWidth="458.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="117.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.0" minWidth="10.0" prefWidth="341.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address: " textAlignment="RIGHT" wrappingWidth="117.50390625" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Infomation: " textAlignment="RIGHT" wrappingWidth="120.328125" GridPane.rowIndex="1" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About Us: " textAlignment="RIGHT" wrappingWidth="117.908203125" GridPane.rowIndex="2" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text: " textAlignment="RIGHT" wrappingWidth="117.13671875" GridPane.rowIndex="3" />
+                                                <JFXTextField GridPane.columnIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" right="10.0" />
+                                                   </GridPane.margin>
+                                                </JFXTextField>
+                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" right="10.0" />
+                                                   </GridPane.margin>
+                                                </JFXTextField>
+                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" right="10.0" />
+                                                   </GridPane.margin>
+                                                </JFXTextField>
+                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" right="10.0" />
+                                                   </GridPane.margin>
+                                                </JFXTextField>
+                                             </children>
+                                          </GridPane>
+                                          <Line endX="-85.0" endY="260.0" layoutX="222.0" layoutY="111.0" startX="-85.0" startY="-111.0" />
+                                          <JFXCheckBox layoutX="698.0" layoutY="321.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
+                                          <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="656.0" layoutY="273.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
+                                       </children>
+                                    </Pane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Social Media">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="817.0">
+                                       <children>
+                                          <Pane prefHeight="359.0" prefWidth="804.0" />
+                                          <GridPane layoutX="24.0" prefHeight="360.0" prefWidth="430.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="81.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="385.0" minWidth="10.0" prefWidth="349.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <JFXTextField GridPane.columnIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" right="10.0" />
+                                                   </GridPane.margin>
+                                                </JFXTextField>
+                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" right="10.0" />
+                                                   </GridPane.margin>
+                                                </JFXTextField>
+                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" right="10.0" />
+                                                   </GridPane.margin>
+                                                </JFXTextField>
+                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <GridPane.margin>
+                                                      <Insets left="15.0" right="10.0" />
+                                                   </GridPane.margin>
+                                                </JFXTextField>
+                                                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../media/Icons/FacebookICON.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                                   <image>
+                                                      <Image url="@../../../media/Icons/TwitterIcon.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                                   <image>
+                                                      <Image url="@../../../media/Icons/LinkinIcon.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                                                   <image>
+                                                      <Image url="@../../../media/Icons/instagramIcon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </GridPane>
+                                          <JFXCheckBox layoutX="708.0" layoutY="331.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
+                                          <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="666.0" layoutY="283.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                           </tabs>
+                        </JFXTabPane>
+                     </children>
+                  </Pane>
+               </content>
+            </TitledPane>
+            <TitledPane prefHeight="560.0" prefWidth="985.0" text="Create an Event">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="43.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="47.13671875" />
+                     </children>
+                  </Pane>
+               </content>
+            </TitledPane>
+         </panes>
+      </Accordion>
+   </children>
+</VBox>

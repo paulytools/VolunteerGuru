@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.ProfilePanels.CharityProfilePanels.charityProfileController">
+   <children>
+      <Pane prefHeight="605.0" prefWidth="1000.0">
+         <children>
+            <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="661.0" layoutY="14.0" prefWidth="150.0" text="Follow" />
+            <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="825.0" layoutY="14.0" prefWidth="150.0" text="Message" />
+            <ImageView id="ProfileIMGView" fitHeight="175.0" fitWidth="172.0" layoutX="-2.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Org_User/User.png" />
+               </image>
+            </ImageView>
+            <Label id="lbl_HomeScreen" fx:id="lbl_CharityName" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="-2.0" prefHeight="58.0" prefWidth="647.0" text="[Charity Name PlaceHolder] " underline="true" wrapText="true">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_CharityAddress" layoutX="272.0" layoutY="64.0" text="[Address]" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_CharityContact" layoutX="272.0" layoutY="100.0" text="[Contact Info [Email/Phone]]" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_CharityBIO" alignment="TOP_LEFT" layoutX="182.0" layoutY="171.0" prefHeight="208.0" prefWidth="461.0" text="[BIO]" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton id="JFXBTN" fx:id="btn_EditProfile" buttonType="RAISED" layoutX="5.0" layoutY="228.0" onAction="#EditProfileBTNClicked" prefHeight="25.0" prefWidth="158.0" text="Edit Profile" />
+            <Text layoutX="650.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events" underline="true" wrappingWidth="199.2822265625">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="189.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="82.91015243530273">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="189.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="82.91015243530273">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="180.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us" wrappingWidth="82.91015243530273">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="650.0" layoutY="79.0" prefHeight="520.0" prefWidth="350.0">
+               <content>
+                  <FlowPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #BB6F6B;">
+                           <FlowPane.margin>
+                              <Insets bottom="20.0" />
+                           </FlowPane.margin>
+                        </Pane>
+                        <Pane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #BB6F6B;">
+                           <FlowPane.margin>
+                              <Insets bottom="20.0" />
+                           </FlowPane.margin>
+                        </Pane>
+                        <Pane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #BB6F6B;">
+                           <FlowPane.margin>
+                              <Insets bottom="20.0" />
+                           </FlowPane.margin>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+                     </padding>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Icons/FacebookICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Icons/TwitterIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Icons/LinkinIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Icons/instagramIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/sample/users/database/DBConnect.java" line="53" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="052b23ba-84e9-491c-99a5-57dc3a66cc51" name="Default Changelist" comment="">
+    <list default="true" id="e1c76cd6-a8dd-499e-9f9b-f70d024e47b4" name="Default Changelist" comment="[Project 1.0] 11/20&#10;-Style update">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/derby.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tab1FindOrganizationPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tab1FindOrganizationPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tab3FindVolunteerPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tab3FindVolunteerPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab3Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityEdit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityEdit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/users/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/users/Organization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/users/Volunteer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/users/Volunteer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VolunteerGurus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VolunteerGurus.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/DBuser/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/library/DBuser/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/DBuser/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/library/DBuser/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/DBuser/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/library/DBuser/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/DBuser/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/library/DBuser/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/homePanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/homePanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab1FindOrganizationPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab1FindOrganizationPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab2FindEventPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab2FindEventPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab3FindVolunteerPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tab3FindVolunteerPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab2Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab3Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/HomePanel/tabController/tab3Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/LoginPanel/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/LoginPanel/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/LoginPanel/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/LoginPanel/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/SignUpPanel/signUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/SignUpPanel/signUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/SignUpPanel/signUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/FXML/SignUpPanel/signUpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/media/userProfilePic1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/users/Organization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/users/Organization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/users/Volunteer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VolunteerGurus/sample/users/Volunteer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/users/database/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/users/database/DBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/users/database/DbDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/users/database/DbDriver.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,6 +43,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.22.1" />
+      </map>
+    </option>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -101,92 +128,95 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1471065852">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="fxml" value="1" />
+          <entry key="java" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="13" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1659" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1655" />
+          <entry key="SQL" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="VolunteerGurus" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityProfileController.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Style.css">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2000">
-              <caret line="80" column="26" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+            <state relative-caret-position="51">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityEditController.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/users/database/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/FXML/LoginPanel/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="17">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/FXML/SignUpPanel/signUp.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/sample/users/database/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+            <state relative-caret-position="850">
+              <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/FXML/SignUpPanel/signUpController.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/users/database/DbDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2525">
-              <caret line="119" column="151" selection-start-line="119" selection-start-column="151" selection-end-line="119" selection-end-column="151" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/homePanel.fxml">
+          <provider selected="true" editor-type-id="text-editor" />
           <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab1Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1625">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -218,13 +248,14 @@
         <option value="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab2Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab1Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/sample/users/database/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab3Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityProfileController.java" />
         <option value="$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityEditController.java" />
         <option value="$PROJECT_DIR$/src/sample/FXML/SignUpPanel/signUpController.java" />
         <option value="$PROJECT_DIR$/src/sample/FXML/LoginPanel/LoginController.java" />
         <option value="$PROJECT_DIR$/src/sample/Style.css" />
+        <option value="$PROJECT_DIR$/src/sample/users/database/DbDriver.java" />
+        <option value="$PROJECT_DIR$/src/sample/users/database/DBConnect.java" />
       </list>
     </option>
   </component>
@@ -241,53 +272,61 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1030" />
+    <option name="x" value="435" />
+    <option name="y" value="-11" />
+    <option name="width" value="903" />
+    <option name="height" value="1031" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="FXML" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="FXML" type="462c0819:PsiDirectoryNode" />
               <item name="HomePanel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="FXML" type="462c0819:PsiDirectoryNode" />
@@ -295,73 +334,46 @@
               <item name="tabController" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="FXML" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginPanel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="FXML" type="462c0819:PsiDirectoryNode" />
-              <item name="ProfilePanels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="FXML" type="462c0819:PsiDirectoryNode" />
-              <item name="ProfilePanels" type="462c0819:PsiDirectoryNode" />
-              <item name="CharityProfilePanels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="FXML" type="462c0819:PsiDirectoryNode" />
-              <item name="ProfilePanels" type="462c0819:PsiDirectoryNode" />
-              <item name="VolunteerProfile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="FXML" type="462c0819:PsiDirectoryNode" />
-              <item name="SignUpPanel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GIT_Guru" type="462c0819:PsiDirectoryNode" />
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GIT_Guru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VolunteerGurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VolunteerGurus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542817579102" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542861477086" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../COP 3003/CompanyDatabase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BooksDBij" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -381,10 +393,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.DbDriver">
     <configuration name="DbDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.users.database.DbDriver" />
-      <module name="GIT_Guru" />
+      <module name="VolunteerGurus" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.users.database.*" />
@@ -397,7 +409,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="GIT_Guru" />
+      <module name="VolunteerGurus" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -414,8 +426,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.DbDriver" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -424,7 +436,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="052b23ba-84e9-491c-99a5-57dc3a66cc51" name="Default Changelist" comment="" />
+      <changelist id="e1c76cd6-a8dd-499e-9f9b-f70d024e47b4" name="Default Changelist" comment="[Project 1.0] 11/20&#10;-Style update" />
       <created>1542472167700</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -444,6 +456,7 @@
       <workItem from="1542725452176" duration="13334000" />
       <workItem from="1542817196101" duration="33000" />
       <workItem from="1542817335177" duration="519000" />
+      <workItem from="1542852350329" duration="6331000" />
     </task>
     <task id="LOCAL-00001" summary="[Project 1.0]&#10;-Sign Up panel redesign&#10;-Profile icon added">
       <created>1542476017425</created>
@@ -463,21 +476,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38502000" />
+    <option name="totallyTimeSpent" value="51754000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49683544" visible="true" weight="0.26835853" />
-      <window_info id="Structure" order="1" sideWeight="0.5031645" side_tool="true" visible="true" weight="0.26835853" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74689823" visible="true" weight="0.20728745" />
+      <window_info id="Structure" order="1" sideWeight="0.25310174" side_tool="true" weight="0.53457" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" side_tool="true" weight="0.32955465" />
+      <window_info anchor="bottom" id="CheckStyle" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49610388" visible="true" weight="0.24851367" />
+      <window_info anchor="bottom" auto_hide="true" x="212" y="457" width="953" height="228" id="Run" order="2" sideWeight="0.7700405" weight="0.27224198" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -485,8 +500,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5038961" side_tool="true" weight="0.252111" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4989339" weight="0.32699168" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.22995952" side_tool="true" weight="0.2725632" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4979757" weight="0.32562277" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="12" weight="0.33333334" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49946696" weight="0.32917964" />
       <window_info anchor="bottom" id="SQL Generator" order="14" sideWeight="0.49946696" visible="true" weight="0.32917964" />
@@ -497,8 +512,8 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.09071274" />
-      <window_info anchor="right" id="Database" order="8" weight="0.0" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.09071274" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3288364" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,24 +533,21 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tab1FindOrganizationPanel.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/VolunteerProfile/volunteerProfileController.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/VolunteerProfile/volunteerProfileEdit.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tab2FindEventPanel.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tab3FindVolunteerPanel.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/GIT_Guru.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/users/database/DataBase.java" />
+    <entry file="file://$PROJECT_DIR$/GIT_Guru.iml" />
     <entry file="das://0013fa24-96f5-4319-8745-99d963d25fe8/schema/APP/table/EVENTTABLE.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0013fa24-96f5-4319-8745-99d963d25fe8/console.sql" />
     <entry file="das://0013fa24-96f5-4319-8745-99d963d25fe8/schema/APP/table/EVENTTABLE" />
@@ -544,16 +556,7 @@
     <entry file="file://$PROJECT_DIR$/library/DBuser/service.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/users/database/DbDriver.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/users/database/DBConnect.java" />
     <entry file="file://$PROJECT_DIR$/derby.log" />
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab2Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -569,12 +572,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityEdit.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2225">
           <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/charityProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -612,19 +615,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/homePanel.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/tab1Controller.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -634,19 +630,132 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FXML/SignUpPanel/signUp.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/tabController/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/users/database/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/FXML/HomePanel/homePanel.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/users/database/DbDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/users/database/DBConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>VolunteerGurus</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

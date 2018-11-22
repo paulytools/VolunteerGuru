@@ -25,7 +25,7 @@
                <content>
                   <VBox prefHeight="603.0" prefWidth="890.0">
                      <children>
-                        <fx:include source="tab2FindEventPanel.fxml" VBox.vgrow="ALWAYS" />
+                        <fx:include prefHeight="600.0" prefWidth="1000.0" source="tab2FindEventPanel.fxml" VBox.vgrow="ALWAYS" />
                      </children>
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" />
