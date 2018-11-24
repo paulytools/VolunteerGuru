@@ -14,6 +14,7 @@ import sample.users.Organization;
 import java.io.IOException;
 import sample.users.Volunteer;
 
+@SuppressWarnings("Duplicates")
 //test
 public class HomeController {
 

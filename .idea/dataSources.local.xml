@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="DBuser" uuid="0013fa24-96f5-4319-8745-99d963d25fe8">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="DERBY" exact-version="0.0" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="DERBY" exact-version="0.0" />
     </data-source>
   </component>
 </project>

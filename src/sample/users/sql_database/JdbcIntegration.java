@@ -7,11 +7,45 @@ import java.sql.SQLException;
 import java.sql.SQLSyntaxErrorException;
 import java.sql.Statement;
 
-public class JdbcIntegration {
+/**
+ * @author Paul Nicowski
+ *
+ * Source: https://youtu.be/YqTe8Eks_qk
+ *
+ * */
 
+@SuppressWarnings("Duplicates")
+public class JdbcIntegration {
 
   public void derbyJdbc () {
 
+    /*
+     * TO DO:
+     *
+     * Paul:
+     * Load the organization table into the gui table. When the organization
+     * is populated, and you click on one of the fields,
+     * the fields in the profile window needs to be populated with information from the database.
+     *
+     * Optional:
+     * Display profile picture for that organization in the window.
+     *
+     * Carlos & Charly:
+     * Make the search function.
+     *
+     * 1. Ensure basic database functions are working.
+     * (a.) Create table? [y]
+     * (b.) Modify/search existing records? []
+     * (c.) I/O records and specific fields? []
+     * (d.) Load database when program is running? []
+     * 2. Map each existing method created in class DBConnect
+     * to an appropriate button when clicked in the program.
+     * (a.) Set all buttons to appropriate actions? []
+     * (b.) Custom actions (make methods for these)? []
+     *
+     *
+     *
+     * */
 
     /*jdbc:derby:your/path/folder/database;create=true
     *
@@ -41,12 +75,15 @@ public class JdbcIntegration {
     ResultSet rs = null;
     try {
       try {
+        // initiate new instance of embedded driver
         DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
       } catch (SQLException e) {
         e.printStackTrace();
       }
       try {
-        conn = DriverManager.getConnection("jdbc:derby:memory:jdbc_db;create=true");
+        // establish connection
+            // establish location of the db
+        conn = DriverManager.getConnection("jdbc:derby:sql_database/test;create=true");
         stmt = conn.createStatement();
       } catch (SQLException e) {
         e.printStackTrace();
@@ -77,7 +114,7 @@ public class JdbcIntegration {
 
         int insertedRows = 0;
         try {
-          insertedRows = stmt.executeUpdate(sql, Statement.RETURN_GENERATED_KEYS);
+          insertedRows = stmt.executeUpdate(sql, Statement.RETURN_GENERATED_KEYS);      // not working?
         } catch (SQLException e) {
           e.printStackTrace();
         }
@@ -104,7 +141,7 @@ public class JdbcIntegration {
             String firstName = rs.getString("first_name");
             String lastName = rs.getString("last_name");
             int age = rs.getInt("age");
-            System.out.println("%d: %s %s, %d years old\n", id, firstName, lastName, age);
+            System.out.printf("%d: %s %s, %d years old\n", id, firstName, lastName, age);
 
           }
         } catch (Exception e) {
