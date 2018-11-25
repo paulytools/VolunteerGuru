@@ -81,11 +81,11 @@ public class VolunteerGuruDatabaseTools {
       }
       // create a new table
       try {
-        stmt.execute("CREATE TABLE volunteersTable(username VARCHAR(50) PRIMARY KEY ,"
+        stmt.execute("CREATE TABLE volunteerTable(username VARCHAR(50) PRIMARY KEY ,"
             + "first_name VARCHAR(100) NOT NULL ,last_name VARCHAR(100) NOT NULL ,"
             + "about_me VARCHAR(1000) NOT NULL ,interests VARCHAR(30) NOT NULL ,"
             + "email VARCHAR(50) NOT NULL ,address VARCHAR(100) NOT NULL ,"
-            + "password VARCHAR(100))");
+            + "password VARCHAR(100) NOT NULL)");
       } catch (SQLException e) {
         e.printStackTrace();
       }
@@ -102,9 +102,9 @@ public class VolunteerGuruDatabaseTools {
         String email, String address, String password) {
 
       try {
-        stmt.execute("INSERT INTO volunteersTable(username, first_name, last_name, about_me,"
+        stmt.execute("INSERT INTO volunteerTable(username, first_name, last_name, about_me,"
             + "interests, email, address, password) "
-            + "VALUES(username, first_name, last_name, about_me,interests, email, address, password)");
+            + "VALUES(username, first_name, last_name, about_me, interests, email, address, password)");
 
       } catch (SQLException e) {
         e.printStackTrace();
@@ -141,6 +141,9 @@ public class VolunteerGuruDatabaseTools {
      * Searches table, with a defined tag, for a set of terms.
      */
     public void searchWithTag() {
+
+      String sql = "";
+
     }
 
     /**
@@ -152,6 +155,8 @@ public class VolunteerGuruDatabaseTools {
 
         String[] field = {""};
 
+
+        String sql = "SELECT";
 
 
 
@@ -194,6 +199,27 @@ public class VolunteerGuruDatabaseTools {
 
     public void refreshTable () {
 
+      // remove current userTable
+      String sql = "DROP TABLE jdbc_orgTable";
+      try {
+        stmt.executeUpdate(sql);
+      } catch (SQLException e) {      // throws an exception if a table does not exist
+        if (((SQLSyntaxErrorException) e).getSQLState()
+            .equals("42Y55"))    // sql derby error code 42Y55
+          System.out.println("Database doesn't exist");
+      }
+      // create a new table
+      try {
+        stmt.execute("CREATE TABLE organizationTable(username VARCHAR(50) PRIMARY KEY ,"
+            + "first_name VARCHAR(100) NOT NULL ,last_name VARCHAR(100) NOT NULL ,"
+            + "about_me VARCHAR(1000) NOT NULL ,interests VARCHAR(30) NOT NULL ,"
+            + "email VARCHAR(50) NOT NULL ,address VARCHAR(100) NOT NULL ,"
+            + "password VARCHAR(100) NOT NULL)");
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+
+      System.out.println("Table created");
 
 
     }
@@ -202,6 +228,16 @@ public class VolunteerGuruDatabaseTools {
      * Adds a new record to the table.
      * */
     public void add() {
+
+      try {
+        stmt.execute("INSERT INTO volunteerTable(username, first_name, last_name, about_me,"
+            + "interests, email, address, password) "
+            + "VALUES(username, first_name, last_name, about_me,interests, email, address, password)");
+
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+
 
     }
 
@@ -229,52 +265,47 @@ public class VolunteerGuruDatabaseTools {
 
 
   public void derbyJdbc () {
+    //jdbc:derby:your/path/folder/database;create=true
 
-    /*
-     * TO DO:
-     * Load the organization table into the gui table. When the organization
-     * is populated, and you click on one of the fields,
-     * the fields in the profile window needs to be populated with information from the database.
-     *
-     * Optional:
-     * Display profile picture for that organization in the window.
-     *
-     * 1. Ensure basic database functions are working.
-     * (a.) Create table? []
-     * (b.) Modify existing records? []
-     * (c.) I/O records and specific fields? []
-     * (d.) Load database when program is running? []
-     * 2. Map each existing method created in class DBConnect
-     * to an appropriate button when clicked in the program.
-     * (a.) Set all buttons to appropriate actions? []
-     * (b.) Custom actions (make methods for these)? []
-     *
-     *
-     *
-     * */
+    //*
 
-    /*jdbc:derby:your/path/folder/database;create=true
-     *
-     * jdbc:derby:library/jdbc_db;create=true
-     *
-     * connect to a database in the classpath:
-     * jdbc:derby:classpath:jdbc_db
-     *
-     * connect to jdbc_db database inside a jar(inside classpath)
-     * jdbc:derby:jar:webdb
-     *
-     * ...(not in the classpath)
-     * jdbc:derby:jar:(C:/path/to/my.jar)webdb
-     *
-     * Shutdown current database:
-     * jdbc:derby:;shutdown=true
-     *
-     *
-     *
-     *
-     *
-     * */
+    //* jdbc:derby:library/jdbc_db;create=true
 
+    //*
+
+    //* connect to a database in the classpath:
+
+    //* jdbc:derby:classpath:jdbc_db
+
+    //*
+
+    //* connect to jdbc_db database inside a jar(inside classpath)
+
+    //* jdbc:derby:jar:webdb
+
+    //*
+
+    //* ...(not in the classpath)
+
+    //* jdbc:derby:jar:(C:/path/to/my.jar)webdb
+
+    //*
+
+    //* Shutdown current database:
+
+    //* jdbc:derby:;shutdown=true
+
+    //*
+
+    //*
+
+    //*
+
+    //*
+
+    //*
+
+    //*
 
     Connection conn = null;
     Statement stmt = null;
