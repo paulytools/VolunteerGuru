@@ -50,7 +50,7 @@
          </VBox.margin>
       </TextField>
 
-     <HBox>
+     <HBox fx:id="btn_Search">
          <children>
             <ComboBox fx:id="cmbox_Tag" minWidth="-Infinity" prefWidth="150.0">
                <opaqueInsets>
@@ -81,7 +81,7 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
          <VBox.margin>
-            <Insets bottom="10.0" left="10.0" right="10.0" />
+            <Insets bottom="20.0" left="10.0" right="10.0" />
          </VBox.margin>
       </TableView>
    </children>

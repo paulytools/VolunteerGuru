@@ -1,4 +1,4 @@
-package sample.FXML.ProfilePanels.CharityProfilePanels;
+package sample.FXML.ProfilePanels.VolunteerProfile;
 
 
 import com.jfoenix.controls.JFXButton;
@@ -13,20 +13,28 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class charityProfileController implements Initializable {
-  @FXML public JFXButton btn_EditProfile;
-  @FXML public Label lbl_CharityName;
-  @FXML private Label lbl_CharityAddress;
-  @FXML private Label lbl_CharityContact;
-  @FXML private  Label lbl_CharityBIO;
 
+
+
+public class VolunteerProfileController implements Initializable {
+  @FXML public JFXButton btn_EditProfile;
+
+  @FXML
+  public Label lbl_VOLName;
+
+  @FXML
+  public Label lbl_VOLAddress;
+  @FXML
+  public Label lbl_VOLContact;
+  @FXML
+  public Label lbl_VOLBIO;
 
 
   public void EditProfileBTNClicked() throws IOException {
     try {
       FXMLLoader fxmlLoader = new FXMLLoader(
-          getClass().getResource(
-              "/sample/FXML/ProfilePanels/CharityProfilePanels/charityEdit.fxml"));
+              getClass().getResource(
+                      "/sample/FXML/ProfilePanels/VolunteerProfile/volunteerEdit.fxml"));
       Parent profile = (Parent) fxmlLoader.load();
       Stage test = new Stage();
       test.setResizable(false);
@@ -41,18 +49,15 @@ public class charityProfileController implements Initializable {
   }
 
 
+  public void setAccount(String name,String address, String Contact,String Bio) {
+    lbl_VOLName.setText(name);
+    lbl_VOLAddress.setText(address);
+    lbl_VOLContact.setText(Contact);
+    lbl_VOLBIO.setText(Contact);
+  }
+
   @Override
   public void initialize(URL location, ResourceBundle resources) {
 
-
- }
-
-
-
-  public void setAccount(String name,String address, String Contact,String Bio) {
-    lbl_CharityName.setText(name);
-    lbl_CharityAddress.setText(address);
-    lbl_CharityContact.setText(Contact);
-    lbl_CharityBIO.setText(Contact);// need bio
   }
 }

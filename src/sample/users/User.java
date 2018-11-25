@@ -17,7 +17,7 @@ public class User {
 
 
 
-	public User(String type, String userName, String password,  String firstName, String lastName, String email, String address) {
+	public User(String type, String userName,  String firstName, String lastName, String email, String address,String Password) {
 		TYPE = type;
 		this.userName = userName;
 		this.firstName = firstName;

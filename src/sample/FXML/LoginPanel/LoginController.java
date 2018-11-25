@@ -27,10 +27,8 @@ public class LoginController extends HomeController {
 
 	/* ID/Variable Declarations */
 	private Stage stage;
-	@FXML private JFXButton btn_Login;
-	@FXML private JFXButton btn_SignUpLG;
-	@FXML private TextField userNameField;
-	@FXML private TextField passwordField;
+	@FXML private JFXButton btn_Login, btn_SignUpLG;
+	@FXML private TextField userNameField, passwordField;
 	@FXML private Label lbl_LoginError;
 
 	/* Methods / Events*/
@@ -63,6 +61,5 @@ public class LoginController extends HomeController {
 		stage.setResizable(false);
 		stage.setScene(scene);
 	}
-
 
 }

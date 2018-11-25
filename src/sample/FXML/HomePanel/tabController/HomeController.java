@@ -7,23 +7,24 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
-import sample.FXML.ProfilePanels.CharityProfilePanels.charityProfileController;
-import sample.FXML.ProfilePanels.VolunteerProfile.volunteerProfileController;
+import sample.FXML.ProfilePanels.CharityProfilePanels.CharityProfileController;
+import sample.FXML.ProfilePanels.VolunteerProfile.VolunteerProfileController;
 import sample.users.Organization;
-
-import java.io.IOException;
 import sample.users.Volunteer;
 
+import java.io.IOException;
+@SuppressWarnings("Duplicates")
 //test
 public class HomeController {
 
     /* ID/Variable Declarations */
-    @FXML public ComboBox cmbox_Tag;
-    @FXML public Button btn_OpenLogin;
-    @FXML public Button btn_SignUp;
-    @FXML public Button btn_demo;
-    public boolean loginStatus = false;
+    @FXML
+    public ComboBox cmbox_Tag;
+    @FXML
+    public Button btn_OpenLogin, btn_SignUp;
 
+    //Need to figure out
+    public boolean loginStatus = false;
 
 
     @FXML
@@ -33,71 +34,72 @@ public class HomeController {
             FXMLLoader fxmlLoader = new FXMLLoader(
                     getClass().getResource("/sample/FXML/LoginPanel/login.fxml"));
             Parent LoginRoot = (Parent) fxmlLoader.load();
-            Stage loginStage = new Stage();
-            loginStage.setResizable(false);
-            loginStage.setTitle("Login");
-            loginStage.setScene(new Scene(LoginRoot));
-            loginStage.show();
+            Stage newStage = new Stage();
+            newStage.setResizable(false);
+            newStage.setTitle("Login");
+            newStage.setScene(new Scene(LoginRoot));
+            newStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    @FXML //Change homePanel.fxml -> signUp.fxml /sample/FXML/SignUpPanel/signUp.fxml
+
+
     public void signUpBTNClicked() throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
                     getClass().getResource("/sample/FXML/SignUpPanel/signUp.fxml"));
             Parent SignUpRoot = (Parent) fxmlLoader.load();
-            Stage signUpStage = new Stage();
-            signUpStage.setTitle("SignUp");
-            signUpStage.setResizable(false);
-            signUpStage.setScene(new Scene(SignUpRoot));
-            signUpStage.show();
+            Stage newStage = new Stage();
+            newStage.setTitle("SignUp");
+            newStage.setResizable(false);
+            newStage.setScene(new Scene(SignUpRoot));
+            newStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 
     public void Org_Selected_Clicked(Organization org) throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
-                getClass().getResource(
-                    "/sample/FXML/ProfilePanels/CharityProfilePanels/CharityProfile.fxml"));
+                    getClass().getResource(
+                            "/sample/FXML/ProfilePanels/CharityProfilePanels/charityProfile.fxml"));
             Parent profile = (Parent) fxmlLoader.load();
-            charityProfileController Controller = fxmlLoader.getController();
-            Controller.setAccount(org.getUserName(),org.getAddress(),org.getEmail(),org.getEmail());
-            Stage signUpStage = new Stage();
-            signUpStage.setTitle("Profile");
-            signUpStage.setScene(new Scene(profile));
-
-            signUpStage.show();
+            CharityProfileController Controller = fxmlLoader.getController();
+            Controller.setAccount(org);
+            Stage newStage = new Stage();
+            newStage.setTitle("Profile");
+            newStage.setScene(new Scene(profile));
+            newStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     public void VOL_Selected_Clicked(Volunteer vol) throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
-                getClass().getResource(
-                    "/sample/FXML/ProfilePanels/VolunteerProfile/VolunteerProfile.fxml"));
+                    getClass().getResource(
+                            "/sample/FXML/ProfilePanels/VolunteerProfile/volunteerProfile.fxml"));
             Parent profile = (Parent) fxmlLoader.load();
-            volunteerProfileController Controller = fxmlLoader.getController();
-            Controller.setAccount(vol.getUserName(),vol.getAddress(),vol.getEmail(),vol.getEmail());
-            Stage signUpStage = new Stage();
-            signUpStage.setTitle("Profile");
-            signUpStage.setScene(new Scene(profile));
-
-            signUpStage.show();
+            VolunteerProfileController Controller = fxmlLoader.getController();
+            Controller.setAccount(vol.getUserName(), vol.getAddress(), vol.getEmail(), vol.getEmail());
+            Stage newStage = new Stage();
+            newStage.setTitle("Profile");
+            newStage.setScene(new Scene(profile));
+            newStage.show();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    @FXML
+
+
     public void setUpComboBox() {
-        cmbox_Tag.getItems().addAll("Environment","Animals","Human Services","International");
+        cmbox_Tag.getItems().addAll("Environment", "Animals", "Human Services", "International");
         cmbox_Tag.setPromptText("Select a category.");
     }
-
 
 
 //    @FXML

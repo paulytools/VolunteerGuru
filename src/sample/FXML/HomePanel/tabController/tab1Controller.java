@@ -20,26 +20,18 @@ public class tab1Controller extends HomeController implements Initializable {
 
   /* ID/Variable Declarations */
   @FXML
-  public JFXButton btn_OpenLogin;
-  @FXML
-  public JFXButton btn_SignUp;
-  @FXML
-  public JFXButton btn_demo;
+  public JFXButton btn_OpenLogin , btn_SignUp;
 
   @FXML
   private Stage stage;
   @FXML
   private TableView<Organization> TV_Results;
   @FXML
-  private TableColumn<Organization, String> TC1_Organization_Name;
-  @FXML
-  private TableColumn<Organization, String> TC2_City;
-  @FXML
-  private TableColumn<Organization, String> TC3_Description;
+  private TableColumn<Organization, String> TC1_Organization_Name, TC2_City, TC3_Description;
 
 
-  /* Methods / Events*/
-  //Home Panel functions
+
+
   //homePanel.fxml -> login.fxml"
   public void OpenLoginBTNClicked() throws IOException {
     super.OpenLoginBTNClicked();
@@ -54,6 +46,7 @@ public class tab1Controller extends HomeController implements Initializable {
   @Override
   public void initialize(URL url, ResourceBundle resources) {
     setUpComboBox();
+
     TC1_Organization_Name.setCellValueFactory(new PropertyValueFactory<Organization, String>(
         "userName"));
     TC2_City.setCellValueFactory(new PropertyValueFactory<Organization, String>(
@@ -61,6 +54,7 @@ public class tab1Controller extends HomeController implements Initializable {
     TC3_Description.setCellValueFactory(new PropertyValueFactory<Organization, String>(
         "email"));
     TV_Results.setItems(getGroup());
+
 
     //Row Selected listener
     TV_Results.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -86,23 +80,20 @@ public class tab1Controller extends HomeController implements Initializable {
   //Organization Object list
   public ObservableList<Organization> getGroup() {
     ObservableList<Organization> Group = FXCollections.observableArrayList();
-    /*
-    While (res.result.next){
 
-    name
-    last
-    email
-    group.add(
-    }
-     */
-    Group.add(new Organization("ORGANIZATION", "Boys and Girls Club of America", "", "",
-        "Boys & Girls Clubs of America is a national organization of local chapters which provide after-school programs for young people",
-        "Naples, FL", "password"));
-    Group.add(new Organization("ORGANIZATION", "Goodwill", "", "",
+    Group.add(new Organization(
+             "ORGANIZATION","username","First name","last name","email","Address","Ww"));
+
+
+    Group.add(new Organization(
+            "ORGANIZATION",
+            "Goodwill",
+            "", "",
         "Goodwill Industries International Inc.,"
             + " or shortened to Goodwill, is an American nonprofit 501 organization that provides "
             + "job training, employment placement services, and other community-based programs for people who have barriers preventing them from otherwise obtaining a job. ",
         "Fort Myers, FL", "f"));
+
     Group.add(new Organization("ORGANIZATION", "Direct Relief", "", "",
         "Direct Relief is a nonprofit, nonpartisan organization with a stated mission to “improve the health and lives of people affected by poverty or emergency situations by mobilizing and providing essential medical resources needed for their care",
         "N/A", "f"));

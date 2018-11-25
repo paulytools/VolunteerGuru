@@ -25,7 +25,7 @@ public class DBConnect {
         try {
             //String type, String userName, String password,  String firstName, String lastName, String email, String city,  String tags, String gender
             conn.createStatement()
-                    .execute("Create TABLE UserTable1 (type varchar(20), userName varchar(50), password varchar(50)," +
+                    .execute("Create TABLE UserTable (type varchar(20), userName varchar(50), password varchar(50)," +
                             " firstName varchar(50),lastName varchar(50), email varchar(50), city varchar, tags varchar(150),  gender varchar(8))");
         } catch (SQLException e) {
             e.printStackTrace();

@@ -8,6 +8,10 @@ public class Organization extends User {
 
 	@Override
 	public String toString() {
-		return getUserName();
+		return
+				"Username:	" +getUserName()+"\n"+
+				"Address:	" +getAddress()+"\n"+
+				"Email:		" +getEmail()+"\n"+
+				"Type:		" +getType()+"\n";
 	}
 }

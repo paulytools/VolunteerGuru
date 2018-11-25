@@ -11,10 +11,10 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
@@ -24,18 +24,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="TOP_CENTER" prefHeight="614.0" prefWidth="804.0" stylesheets="@../../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.ProfilePanels.CharityProfilePanels.charityEditController">
+<VBox alignment="TOP_CENTER" prefHeight="614.0" prefWidth="804.0" stylesheets="@../../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.ProfilePanels.CharityProfilePanels.CharityEditController">
    <children>
-      <ImageView fx:id="IVew_CurrentEdit" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="IVew_CurrentEdit" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../media/Org_User/User.png" />
+            <Image url="@../../../media/Org_User/User1.png" />
          </image>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
       </ImageView>
       <Accordion prefHeight="685.0" prefWidth="870.0">
          <panes>
             <TitledPane depthTest="ENABLE" expanded="false" focusTraversable="false" maxHeight="1000000.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="804.0" text="Change Profile Picture">
                <content>
-                  <GridPane id="GP_EditProfilePic" fx:id="GP_EditProfilePic" prefWidth="802.0" stylesheets="@../../../Style.css">
+                  <GridPane id="pane_background" fx:id="GP_EditProfilePic" prefWidth="802.0" stylesheets="@../../../Style.css">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -54,7 +57,7 @@
                         </ImageView>
                         <ImageView fx:id="IVew_User3" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                            <image>
-                              <Image url="@../../../media/Org_User/User3png.png" />
+                              <Image url="@../../../media/Org_User/User3.png" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="IVew_User4" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
@@ -89,24 +92,24 @@
                         </ImageView>
                         <ImageView fx:id="IVew_User1" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../media/Org_User/User.png" />
+                              <Image url="@../../../media/Org_User/User1.png" />
                            </image>
                         </ImageView>
                      </children>
                   </GridPane>
                </content>
             </TitledPane>
-            <TitledPane expanded="false" prefHeight="39.0" prefWidth="793.0" text="Change Your Information">
+            <TitledPane expanded="false" prefHeight="39.0" prefWidth="800.0" text="Change Your Information">
                <content>
-                  <Pane prefHeight="396.0" prefWidth="847.0">
+                  <Pane id="pane_backgrounds" prefHeight="396.0" prefWidth="847.0">
                      <children>
-                        <JFXTabPane layoutX="-6.0" prefHeight="397.0" prefWidth="810.0">
+                        <JFXTabPane layoutX="-6.0" prefHeight="416.0" prefWidth="825.0">
                            <tabs>
                               <Tab text=" Organization Infomation">
                                  <content>
-                                    <Pane prefHeight="360.0" prefWidth="811.0">
+                                    <Pane id="pane_background" prefHeight="360.0" prefWidth="811.0">
                                        <children>
-                                          <GridPane layoutX="14.0" layoutY="14.0" prefHeight="336.0" prefWidth="458.0">
+                                          <GridPane fx:id="txtFL_ChangeAddress" layoutX="14.0" layoutY="14.0" prefHeight="336.0" prefWidth="458.0">
                                             <columnConstraints>
                                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="117.0" />
                                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.0" minWidth="10.0" prefWidth="341.0" />
@@ -134,17 +137,12 @@
                                                    <font>
                                                       <Font size="16.0" />
                                                    </font></Text>
-                                                <JFXTextField GridPane.columnIndex="1">
+                                                <JFXTextField fx:id="txtFL_ChangeAddress" GridPane.columnIndex="1">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                                                   <GridPane.margin>
-                                                      <Insets left="15.0" right="10.0" />
-                                                   </GridPane.margin>
-                                                </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                <JFXTextField fx:id="txtFL_ChangeContact" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
@@ -154,25 +152,27 @@
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
+                                                <TextArea fx:id="txtArea_About" prefHeight="84.0" prefWidth="311.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <GridPane.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </GridPane.margin>
+                                                </TextArea>
                                              </children>
                                           </GridPane>
                                           <Line endX="-85.0" endY="260.0" layoutX="222.0" layoutY="111.0" startX="-85.0" startY="-111.0" />
-                                          <JFXCheckBox layoutX="696.0" layoutY="321.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
-                                          <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="654.0" layoutY="273.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
+                                          <JFXCheckBox fx:id="cbox_Infomation" layoutX="696.0" layoutY="321.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
+                                          <JFXButton id="JFXBTN" fx:id="btn_ChangeInfo" buttonType="RAISED" layoutX="654.0" layoutY="273.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
                                        </children>
                                     </Pane>
                                  </content>
                               </Tab>
                               <Tab text="Social Media">
-                                <content>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="817.0">
+                                 <content>
+                                    <Pane id="pane_background" prefHeight="359.0" prefWidth="804.0">
                                        <children>
-                                          <Pane prefHeight="359.0" prefWidth="804.0">
-                                             <children>
-                                                <JFXCheckBox layoutX="690.0" layoutY="320.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
-                                                <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="648.0" layoutY="272.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
-                                             </children></Pane>
-                                          <GridPane layoutX="24.0" prefHeight="360.0" prefWidth="430.0">
+                                          <JFXCheckBox fx:id="cbox_Social" layoutX="690.0" layoutY="320.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
+                                          <JFXButton id="JFXBTN" fx:id="btn_ChangeSocial" buttonType="RAISED" layoutX="648.0" layoutY="272.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
+                                          <GridPane fx:id="txtFL_Instagram" layoutX="20.0" prefHeight="360.0" prefWidth="430.0">
                                              <columnConstraints>
                                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="81.0" />
                                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="385.0" minWidth="10.0" prefWidth="349.0" />
@@ -184,17 +184,17 @@
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                              </rowConstraints>
                                              <children>
-                                                <JFXTextField GridPane.columnIndex="1">
+                                                <JFXTextField fx:id="txtFL_FaceBook" GridPane.columnIndex="1">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                <JFXTextField fx:id="txtFL_Twitter" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                <JFXTextField fx:id="txtFL_LinkedIn" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
@@ -226,8 +226,9 @@
                                                 </ImageView>
                                              </children>
                                           </GridPane>
-                                       </children></AnchorPane>
-                                </content>
+                                       </children>
+                                    </Pane>
+                                 </content>
                               </Tab>
                            </tabs>
                         </JFXTabPane>
@@ -237,11 +238,11 @@
             </TitledPane>
             <TitledPane prefHeight="560.0" prefWidth="985.0" text="Create an Event">
                <content>
-                  <Pane prefHeight="200.0" prefWidth="200.0">
+                  <Pane id="pane_background" prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <Line endX="-100.0" endY="367.0" layoutX="473.0" layoutY="33.0" startX="-100.0" startY="-38.0" />
-                        <JFXCheckBox layoutX="688.0" layoutY="373.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
-                        <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="646.0" layoutY="325.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
+                        <JFXCheckBox fx:id="cbox_CreateEvent" layoutX="688.0" layoutY="373.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
+                        <JFXButton id="JFXBTN" fx:id="btn_CreateEvent" buttonType="RAISED" layoutX="646.0" layoutY="325.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
                         <GridPane layoutX="3.0" layoutY="-1.0" prefHeight="396.0" prefWidth="369.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="95.0" />
@@ -282,23 +283,26 @@
                                     <Font size="16.0" />
                                  </font>
                               </Text>
-                              <DatePicker prefHeight="25.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                              <JFXTimePicker prefHeight="28.0" prefWidth="355.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <DatePicker fx:id="datePicker_Event" prefHeight="25.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <JFXTimePicker fx:id="timePicker_Event" prefHeight="28.0" prefWidth="355.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <GridPane.margin>
                                     <Insets left="150.0" />
                                  </GridPane.margin>
                               </JFXTimePicker>
-                              <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                              <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                              <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <JFXTextField fx:id="txtFL_EventName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <JFXTextField fx:id="txtFL_EventWhere" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <JFXTextField fx:id="txtFL_EventGoal" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextArea fx:id="txtEvent_Abount" prefHeight="174.0" prefWidth="300.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextArea>
                            </children>
                         </GridPane>
-                        <JFXColorPicker layoutX="383.0" layoutY="325.0" prefHeight="25.0" prefWidth="79.0" />
+                        <JFXColorPicker fx:id="colorPicker_Event" layoutX="383.0" layoutY="325.0" prefHeight="25.0" prefWidth="79.0" />
                         <Pane layoutX="488.0" layoutY="14.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #BB6F6B;">
                            <children>
                               <JFXButton id="JFXBTN" layoutX="216.0" layoutY="274.0" prefHeight="25.0" prefWidth="75.0" text="Join" />
-                              <Label layoutX="5.0" layoutY="94.0" prefHeight="152.0" prefWidth="286.0" text="Label" />
                               <Label layoutX="176.0" layoutY="274.0" text="0 / 0">
                                  <font>
                                     <Font size="16.0" />
@@ -309,17 +313,34 @@
                                     <Font size="18.0" />
                                  </font>
                               </Text>
-                              <Label layoutX="192.0" layoutY="63.0" prefHeight="31.0" prefWidth="83.0" text="Count Down" />
-                              <Label alignment="TOP_CENTER" layoutY="-2.0" prefHeight="111.0" prefWidth="300.0" style="-fx-background-color: #AB6560;" text="[Title]">
+                              <Label alignment="TOP_CENTER" prefHeight="39.0" prefWidth="300.0" style="-fx-background-color: #AB6560;" text="[Title]" textAlignment="CENTER">
                                  <font>
                                     <Font size="30.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="5.0" layoutY="38.0" prefHeight="31.0" prefWidth="83.0" text="[Title]" />
-                              <Label layoutX="5.0" layoutY="63.0" prefHeight="31.0" prefWidth="83.0" text="[Title]" />
+                              <TextArea layoutY="87.0" prefHeight="185.0" prefWidth="300.0" wrapText="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextArea>
+                              <Label layoutX="253.0" layoutY="45.0" text="[Date]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="253.0" layoutY="68.0" prefHeight="17.0" prefWidth="39.0" text="[Time]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="45.0" text="[Where]">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
                            </children>
                         </Pane>
-                        <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="382.0" layoutY="361.0" prefHeight="25.0" prefWidth="65.0" text="Demo" />
+                        <JFXButton id="JFXBTN" fx:id="btn_EventDemo" buttonType="RAISED" layoutX="382.0" layoutY="361.0" prefHeight="25.0" prefWidth="65.0" text="Demo" />
                      </children>
                   </Pane>
                </content>

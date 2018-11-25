@@ -47,7 +47,7 @@
             </FlowPane>
          </content>
       </ScrollPane>
-      <ListView layoutX="75.0" layoutY="327.0" prefHeight="253.0" prefWidth="560.0" />
+      <ListView layoutX="78.0" layoutY="378.0" prefHeight="208.0" prefWidth="560.0" />
       <Label id="lbl_HomeScreen" fx:id="lbl_VOLName" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="8.0" prefHeight="58.0" prefWidth="647.0" text="[Name PlaceHolder] " underline="true" wrapText="true">
          <font>
             <Font size="40.0" />
@@ -63,7 +63,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_VOLBIO" alignment="TOP_LEFT" layoutX="190.0" layoutY="187.0" prefHeight="113.0" prefWidth="461.0" text="[BIO]" wrapText="true">
+      <Label fx:id="lbl_VOLBIO" alignment="TOP_LEFT" layoutX="190.0" layoutY="187.0" prefHeight="185.0" prefWidth="461.0" text="[BIO]" wrapText="true">
          <font>
             <Font size="20.0" />
          </font>

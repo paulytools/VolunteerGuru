@@ -24,14 +24,12 @@ import sample.users.Organization;
 public class tab2Controller extends HomeController implements Initializable {
 
   /* ID/Variable Declarations */
-  @FXML public JFXButton btn_OpenLogin;
-  @FXML public JFXButton btn_SignUp;
+  @FXML public JFXButton btn_OpenLogin , btn_SignUp;
 
   @FXML private Stage stage;
   @FXML private TableView<Organization> TV_Results;
-  @FXML private TableColumn<Organization, String> TC1_Organization_Name;
-  @FXML private TableColumn<Organization, String> TC2_City;
-  @FXML private TableColumn<Organization, String> TC3_Description;
+  @FXML
+  private TableColumn<Organization, String> TC1_Organization_Name, TC2_City, TC3_Description;
 
   /* Methods / Events*/
   //Home Panel functions
