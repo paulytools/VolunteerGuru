@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="library">
     <CLASSES>
+      <root url="jar://$PROJECT_DIR$/library/jfoenix-8.0.7.jar!/" />
       <root url="jar://$PROJECT_DIR$/library/derby.jar!/" />
       <root url="jar://$PROJECT_DIR$/library/jfoenix-9.0.6.jar!/" />
-      <root url="jar://$PROJECT_DIR$/library/jfoenix-8.0.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
