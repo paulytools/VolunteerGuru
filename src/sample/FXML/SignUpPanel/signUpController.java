@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.stage.Stage;
@@ -28,22 +29,23 @@ public class signUpController implements Initializable {
 	@FXML private JFXRadioButton rbtn_Volunteer;
 	@FXML private JFXRadioButton rbtn_Charity;
 	@FXML private Button btn_Submit;
-	@FXML private Label lbl_UserHandle;
-	@FXML private Label lbl_SignUpError;
 	//input fields
 	@FXML private TextField txtFL_UserHandle;
 	@FXML private TextField txtFL_FirstName;
 	@FXML private TextField txtFL_LastName;
 	@FXML private TextField txtFL_About;
-	@FXML private ComboBox cmbox_Tag1, cmbox_Tag2, cmbox_Tag3;
 	@FXML private TextField txtFL_Email;
 	@FXML private TextField txtFL_Address;
 	@FXML private TextField txtFL_Password;
-	@FXML private TextField txtFL_CPassword;
 
+	@FXML private TextField txtFL_CPassword;
+	@FXML private TextArea txtArea_About;
+
+	@FXML private ComboBox cmbox_Tag1, cmbox_Tag2, cmbox_Tag3;
 	@FXML private  Label lbl_Tags;
 	@FXML private  Label lbl_About;
-
+	@FXML private Label lbl_UserHandle;
+	@FXML private Label lbl_SignUpError;
 
 	private void saveUser() throws IOException {
 		// gets the text from the textfields
