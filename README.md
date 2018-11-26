@@ -28,11 +28,11 @@ Note for school project: You want a potential client or hirer to be able to run 
 
 ## Authors
 
-Charly Garcia
-Carlos Perez
-Romanov Andre
-Paul Nicowski
-David Ensign
+Charly Garcia</br>
+Carlos Perez</br>
+Romanov Andre</br>
+Paul Nicowski</br>
+David Ensign</br>
 
 ## License
 
@@ -49,7 +49,7 @@ To choose a license, see https://choosealicense.com/
 
 ## Acknowledgments
 
-A majority of this project has been taught in the Fall 2018 semester through courses:
+The majority of this project has been taught in the Fall 2018 semester through courses:
 * CEN 3031 - Software Engineering Fundamentals - Dr. Anna Koufakou
 * COP 3003 - Object-Oriented Programming - Prof. Scott Vanselow
 
