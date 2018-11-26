@@ -1,11 +1,10 @@
 <component name="libraryTable">
   <library name="library">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/library/derby.jar!/" />
-      <root url="jar://$PROJECT_DIR$/library/jfoenix-9.0.6.jar!/" />
-      <root url="jar://$PROJECT_DIR$/library/jfoenix-8.0.7.jar!/" />
+      <root url="file://$PROJECT_DIR$/library" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/library" recursive="false" />
   </library>
 </component>

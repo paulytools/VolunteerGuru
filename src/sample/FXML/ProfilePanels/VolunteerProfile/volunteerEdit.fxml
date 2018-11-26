@@ -129,22 +129,22 @@
                                                    <font>
                                                       <Font size="16.0" />
                                                    </font></Text>
-                                                <JFXTextField GridPane.columnIndex="1">
+                                                <JFXTextField fx:id="txtFL_VolAddress" GridPane.columnIndex="1">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                <JFXTextField fx:id="txtFL_VolContact" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                <JFXTextField fx:id="txtFL_VolAboutme" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                <JFXTextField fx:id="txtFL_VolFillerStuff" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
@@ -152,8 +152,8 @@
                                              </children>
                                           </GridPane>
                                           <Line endX="-85.0" endY="260.0" layoutX="222.0" layoutY="111.0" startX="-85.0" startY="-111.0" />
-                                          <JFXCheckBox layoutX="696.0" layoutY="321.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
-                                          <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="654.0" layoutY="273.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
+                                          <JFXCheckBox fx:id="cBox_ChangeInfo" layoutX="696.0" layoutY="321.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
+                                          <JFXButton id="JFXBTN" fx:id="btn_ChangeInfo" buttonType="RAISED" layoutX="654.0" layoutY="273.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
                                        </children>
                                     </Pane>
                                  </content>
@@ -162,8 +162,8 @@
                                  <content>
                                     <Pane id="pane_background" prefHeight="359.0" prefWidth="804.0">
                                        <children>
-                                          <JFXCheckBox layoutX="696.0" layoutY="363.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
-                                          <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="654.0" layoutY="315.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
+                                          <JFXCheckBox fx:id="cBox_Social" layoutX="696.0" layoutY="363.0" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
+                                          <JFXButton id="JFXBTN" fx:id="btn_Social" buttonType="RAISED" layoutX="654.0" layoutY="315.0" prefHeight="39.0" prefWidth="142.0" text="Change Infomation" />
                                           <GridPane layoutX="14.0" layoutY="3.0" prefHeight="365.0" prefWidth="430.0">
                                              <columnConstraints>
                                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="81.0" />
@@ -178,22 +178,22 @@
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                              </rowConstraints>
                                              <children>
-                                                <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                <JFXTextField fx:id="txtFl_Facebook" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                <JFXTextField fx:id="txtFl_Twitter" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                <JFXTextField fx:id="txtFl_LinkedIn" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
                                                 </JFXTextField>
-                                                <JFXTextField prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                <JFXTextField fx:id="txtFl_Instagram" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>
