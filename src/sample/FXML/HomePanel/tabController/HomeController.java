@@ -1,5 +1,7 @@
 package sample.FXML.HomePanel.tabController;
 
+import java.io.IOException;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,29 +12,28 @@ import javafx.stage.Stage;
 import sample.FXML.ProfilePanels.CharityProfilePanels.CharityProfileController;
 import sample.FXML.ProfilePanels.VolunteerProfile.VolunteerProfileController;
 import sample.users.Organization;
+import sample.users.User;
 import sample.users.Volunteer;
 
-import java.io.IOException;
-@SuppressWarnings("Duplicates")
 //test
 public class HomeController {
 
     /* ID/Variable Declarations */
-    @FXML
-    public ComboBox cmbox_Tag;
-    @FXML
-    public Button btn_OpenLogin, btn_SignUp;
-
-    //Need to figure out
+    @FXML public ComboBox cmbox_Tag;
+    @FXML public Button btn_OpenLogin;
+    @FXML public Button btn_SignUp;
+    @FXML public Button btn_demo;
     public boolean loginStatus = false;
-
+    
+    // creates one logged-in user 
+    public static User loggedInUser = null;
 
     @FXML
     public void OpenLoginBTNClicked() throws IOException {
         System.out.println("[Event](OPEN-Login Clicked)");
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
-                    getClass().getResource("/sample/FXML/LoginPanel/login.fxml"));
+                getClass().getResource("/sample/FXML/LoginPanel/login.fxml"));
             Parent LoginRoot = (Parent) fxmlLoader.load();
             Stage newStage = new Stage();
             newStage.setResizable(false);
@@ -48,7 +49,7 @@ public class HomeController {
     public void signUpBTNClicked() throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
-                    getClass().getResource("/sample/FXML/SignUpPanel/signUp.fxml"));
+                getClass().getResource("/sample/FXML/SignUpPanel/signUp.fxml"));
             Parent SignUpRoot = (Parent) fxmlLoader.load();
             Stage newStage = new Stage();
             newStage.setTitle("SignUp");
@@ -64,8 +65,8 @@ public class HomeController {
     public void Org_Selected_Clicked(Organization org) throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
-                    getClass().getResource(
-                            "/sample/FXML/ProfilePanels/CharityProfilePanels/charityProfile.fxml"));
+                getClass().getResource(
+                    "/sample/FXML/ProfilePanels/CharityProfilePanels/charityProfile.fxml"));
             Parent profile = (Parent) fxmlLoader.load();
             CharityProfileController Controller = fxmlLoader.getController();
             Controller.setAccount(org);
@@ -81,11 +82,11 @@ public class HomeController {
     public void VOL_Selected_Clicked(Volunteer vol) throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(
-                    getClass().getResource(
-                            "/sample/FXML/ProfilePanels/VolunteerProfile/volunteerProfile.fxml"));
+                getClass().getResource(
+                    "/sample/FXML/ProfilePanels/VolunteerProfile/volunteerProfile.fxml"));
             Parent profile = (Parent) fxmlLoader.load();
             VolunteerProfileController Controller = fxmlLoader.getController();
-            Controller.setAccount(vol.getUserName(), vol.getAddress(), vol.getEmail(), vol.getEmail());
+            Controller.setAccount(vol);
             Stage newStage = new Stage();
             newStage.setTitle("Profile");
             newStage.setScene(new Scene(profile));
@@ -100,28 +101,4 @@ public class HomeController {
         cmbox_Tag.getItems().addAll("Environment", "Animals", "Human Services", "International");
         cmbox_Tag.setPromptText("Select a category.");
     }
-
-
-//    @FXML
-//    public void setLoginStatus(boolean loginStatus){
-//        System.out.println("Change status" + loginStatus);
-//        this.loginStatus = loginStatus;
-//        checkLoginStatus();
-//    }
-//    @FXML
-//    public void checkLoginStatus() {
-////        FXMLLoader fxmlLoader = new FXMLLoader(
-////            getClass().getResource("/sample/FXML/tab1Controller.fxml"));
-//        System.out.println("1");
-//        if (loginStatus) {
-//            System.out.println("2");
-//            btn_OpenLogin.setDisable(true);
-//            btn_SignUp.setDisable(true);
-//        }else
-//            System.out.println("3");
-//        btn_OpenLogin.setDisable(false);
-//        btn_SignUp.setDisable(false);
-//    }
-
-
 }

@@ -61,7 +61,7 @@
                </HBox.margin>
             </ComboBox>
             <Region prefHeight="27.0" prefWidth="630.0" HBox.hgrow="ALWAYS" />
-            <JFXButton id="JFXBTN" fx:id="btn_Search" buttonType="RAISED" prefHeight="25.0" prefWidth="150.0" stylesheets="@../../Style.css" text="Search">
+            <JFXButton id="JFXBTN" buttonType="RAISED" prefHeight="25.0" prefWidth="150.0" stylesheets="@../../Style.css" text="Search">
                <HBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
                </HBox.margin>

@@ -1,51 +1,49 @@
 package sample.FXML.SignUpPanel;
 
-import com.jfoenix.controls.JFXRadioButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import com.jfoenix.controls.JFXRadioButton;
+
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.stage.Stage;
 import sample.users.User;
-import sample.users.database.DataBase;
+import sample.users.database.Database;
 
 public class signUpController implements Initializable {
 
-	private ToggleGroup RoleToggle;
+
 	private Stage stage;
 
 	@FXML private JFXRadioButton rbtn_Volunteer;
 	@FXML private JFXRadioButton rbtn_Charity;
 	@FXML private Button btn_Submit;
-	//input fields
+	@FXML private Label lbl_UserHandle;
+	@FXML private Label lbl_SignUpError;
+	@FXML private  Label lbl_Tags;
+	@FXML private  Label lbl_About;
+	@FXML public ToggleGroup RoleToggle;
 	@FXML private TextField txtFL_UserHandle;
 	@FXML private TextField txtFL_FirstName;
 	@FXML private TextField txtFL_LastName;
-	@FXML private TextField txtFL_About;
 	@FXML private TextField txtFL_Email;
 	@FXML private TextField txtFL_Address;
 	@FXML private TextField txtFL_Password;
-
 	@FXML private TextField txtFL_CPassword;
-	@FXML private TextArea txtArea_About;
 
-	@FXML private ComboBox cmbox_Tag1, cmbox_Tag2, cmbox_Tag3;
-	@FXML private  Label lbl_Tags;
-	@FXML private  Label lbl_About;
-	@FXML private Label lbl_UserHandle;
-	@FXML private Label lbl_SignUpError;
+	@FXML private  TextField txtFL_About;
+	@FXML private ComboBox cmbox_Tag1;
+	@FXML private ComboBox cmbox_Tag2;
+	@FXML private ComboBox cmbox_Tag3;
+
+
 
 	private void saveUser() throws IOException {
 		// gets the text from the textfields
@@ -53,6 +51,7 @@ public class signUpController implements Initializable {
 		String userName = txtFL_UserHandle.getText();
 		String firstName = txtFL_FirstName.getText();
 		String lastName = txtFL_LastName.getText();
+//		String aboutMe = txtFL_About.getText();
 		String email = txtFL_Email.getText();
 		String address = txtFL_Address.getText();
 		String password = txtFL_Password.getText();
@@ -71,17 +70,20 @@ public class signUpController implements Initializable {
 		}
 		// creates a user based on data provided
 		User newUser = new User(type, userName, firstName, lastName, email, address, password);
+		newUser.setAboutMe("I am an outgoing person");
+		String[] interests = {cmbox_Tag1.getValue().toString(), cmbox_Tag2.getValue().toString(), cmbox_Tag3.getValue().toString()};
+		newUser.setInterests(interests);
 
 		// checks if account already exists
 		//Doesn't seem to be working rn (CP)
-		if (DataBase.accountExists(newUser.getUserName(), newUser.getPassword())) {
+		if (Database.accountExists(newUser.getUserName(), newUser.getPassword())) {
 			System.out.println("Account already exists.");
 			lbl_SignUpError.setText("Username Taken.");
 			return;
 		}
 
 		// stores user in database
-		DataBase.saveAccount(newUser);
+		Database.saveAccount(newUser);
 
 		// goes to next page
 		System.out.println("Valid");
@@ -99,12 +101,12 @@ public class signUpController implements Initializable {
 	@FXML
 	public void radioButtonChanged() {
 		if (this.RoleToggle.getSelectedToggle().equals(this.rbtn_Volunteer)) {
-			lbl_UserHandle.setText("[*] Username:");
+			lbl_UserHandle.setText("Username:");
 			lbl_About.setText("About Me:");
 			lbl_Tags.setText("My Interests:");
 		}
 		if (this.RoleToggle.getSelectedToggle().equals(this.rbtn_Charity)) {
-			lbl_UserHandle.setText("[*] Charity's Name:");
+			lbl_UserHandle.setText("Charity's Name:");
 			lbl_About.setText("Description:");
 			lbl_Tags.setText("Focus:");
 		}

@@ -12,23 +12,26 @@ package sample.FXML.LoginPanel;
 import java.io.IOException;
 
 import com.jfoenix.controls.JFXButton;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import sample.FXML.HomePanel.tabController.HomeController;
-import sample.users.database.DataBase;
+import sample.users.database.Database;
+
 
 public class LoginController extends HomeController {
 
 	/* ID/Variable Declarations */
 	private Stage stage;
-	@FXML private JFXButton btn_Login, btn_SignUpLG;
-	@FXML private TextField userNameField, passwordField;
+	@FXML private JFXButton btn_Login;
+	@FXML private JFXButton btn_SignUpLG;
+	@FXML private TextField userNameField;
+	@FXML private TextField passwordField;
 	@FXML private Label lbl_LoginError;
 
 	/* Methods / Events*/
@@ -37,17 +40,19 @@ public class LoginController extends HomeController {
 	@FXML
 	private void loginBTNClicked() throws IOException {
 		System.out.println("[Event](Login Clicked)");
-		boolean exists = DataBase.accountExists(userNameField.getText(), passwordField.getText());
-		if (exists) {
-			stage = (Stage) btn_Login.getScene().getWindow();
-			stage.close();
-			System.out.println("Valid");
-		}
+		boolean exists = Database.accountExists(userNameField.getText(), passwordField.getText());
 
 		if (userNameField.getText().isEmpty()||passwordField.getText().isEmpty()){
 			lbl_LoginError.setText("Please enter a Username/Password.");
 		}else {
 			lbl_LoginError.setText("Invalid Username/Password.");
+		}
+		if (exists) {
+			stage = (Stage) btn_Login.getScene().getWindow();
+			stage.close();
+			System.out.println("Valid");
+			HomeController.loggedInUser = Database.getUser(userNameField.getText(), passwordField.getText());
+			System.out.println(loggedInUser.getUserName() + " has logged in.");
 		}
 	}
 
@@ -61,5 +66,6 @@ public class LoginController extends HomeController {
 		stage.setResizable(false);
 		stage.setScene(scene);
 	}
+
 
 }

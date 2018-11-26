@@ -1,23 +1,24 @@
 package sample.users;
 
-import javafx.beans.property.SimpleStringProperty;
-
 public class User {
 
 	private final String TYPE;
 	public static final String VOLUNTEER = "VOLUNTEER";
 	public static final String ORGANIZATION = "ORGANIZATION";
 
-	private String userName;
-	private String firstName;
-	private String lastName;
-	private String email;
-	private String address;
-	private String password;
-
-
-
-	public User(String type, String userName,  String firstName, String lastName, String email, String address,String Password) {
+	protected String userName;
+	protected String firstName;
+	protected String lastName;
+	protected String aboutMe;
+	protected String[] interests = new String[3];
+	protected String email;
+	protected String address;
+	protected String password;
+	
+	protected String tvName;
+	
+	public User(String type, String userName, String firstName, String lastName, String email, String address,
+			String password) {
 		TYPE = type;
 		this.userName = userName;
 		this.firstName = firstName;
@@ -33,6 +34,10 @@ public class User {
 
 	public String getUserName() {
 		return userName;
+	}
+	
+	public String getTvName() {
+		return tvName;
 	}
 
 	public String getFirstName() {
@@ -55,9 +60,27 @@ public class User {
 		return password;
 	}
 
-	public String getAllData() {
-		String data = TYPE + ":" + userName + ":" + password + ":" + firstName + ":" + lastName + ":" + email + ":" + address;
+	public String getUserData() {
+		String data = TYPE + ":" + userName + ":" + firstName + ":" + lastName + ":" + getAboutMe() //
+				+ ":" + getInterests()[0] + ":" + getInterests()[1] + ":" + getInterests()[2] + ":" //
+				+ email + ":" + address + ":" + password;
 		return data;
+	}
+
+	public void setAboutMe(String text) {
+		this.aboutMe = text;
+	}
+
+	public String getAboutMe() {
+		return aboutMe;
+	}
+
+	public void setInterests(String[] interests) {
+		this.interests = interests;
+	}
+
+	public String[] getInterests() {
+		return interests;
 	}
 
 }

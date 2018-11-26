@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -20,14 +21,14 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.ProfilePanels.VolunteerProfile.VolunteerProfileController">
   <children>
       <Rectangle id="rectangle" arcHeight="10.0" arcWidth="10.0" fill="#bfbfbf07" height="533.0" layoutX="183.0" layoutY="61.0" stroke="#4747473e" strokeType="INSIDE" strokeWidth="2.0" width="462.0" />
-    <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="-6.0" layoutY="47.0">
+    <ImageView fx:id="IView_ProfilePic" fitHeight="200.0" fitWidth="200.0" layoutX="-6.0" layoutY="47.0">
       <image>
         <Image url="@../../../media/Vol_User/vol2.png" />
       </image>
     </ImageView>
-      <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="660.0" layoutY="14.0" prefWidth="150.0" text="Invite" />
-      <JFXButton id="JFXBTN" buttonType="RAISED" layoutX="824.0" layoutY="14.0" prefWidth="150.0" text="Message" />
-      <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="647.0" layoutY="61.0" prefHeight="533.0" prefWidth="350.0" style="-fx-border-color: #474749; -fx-border-radius: 5px;">
+      <JFXButton id="JFXBTN" fx:id="btn_VolInvite" buttonType="RAISED" layoutX="665.0" layoutY="15.0" prefWidth="150.0" text="Invite" />
+      <JFXButton id="JFXBTN" fx:id="btn_VolMessage" buttonType="RAISED" layoutX="829.0" layoutY="15.0" prefWidth="150.0" text="Message" />
+      <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="654.0" layoutY="61.0" prefHeight="533.0" prefWidth="350.0" style="-fx-border-color: #474749; -fx-border-radius: 5px;">
          <content>
             <FlowPane prefHeight="965.0" prefWidth="335.0">
                <children>
@@ -61,42 +62,33 @@
             </FlowPane>
          </content>
       </ScrollPane>
-      <ListView layoutX="189.0" layoutY="326.0" prefHeight="261.0" prefWidth="449.0" />
       <Label id="lbl_HomeScreen" fx:id="lbl_VOLName" alignment="CENTER" contentDisplay="CENTER" layoutY="-2.0" prefHeight="58.0" prefWidth="641.0" text="[Name PlaceHolder] " underline="true" wrapText="true">
          <font>
             <Font size="40.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_VOLAddress" alignment="TOP_LEFT" layoutX="272.0" layoutY="75.0" prefHeight="55.0" prefWidth="359.0" text="[**************************************************************************]" wrapText="true">
+      <Label fx:id="lbl_VOLAddress" alignment="TOP_LEFT" layoutX="276.0" layoutY="296.0" prefHeight="55.0" prefWidth="359.0" text="[**************************************************************************]" wrapText="true">
          <font>
-            <Font size="18.0" />
+            <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_VOLContact" alignment="TOP_LEFT" layoutX="272.0" layoutY="133.0" prefHeight="55.0" prefWidth="359.0" text="[Contact Info [Email/Phone]]lllllllllllllllllllllllllllllllllllllll" wrapText="true">
+      <Label fx:id="lbl_VOLContact" alignment="TOP_LEFT" layoutX="276.0" layoutY="354.0" prefHeight="55.0" prefWidth="359.0" text="[******************************************************************]" wrapText="true">
          <font>
-            <Font size="18.0" />
+            <Font size="16.0" />
          </font>
-      </Label>
-      <Label fx:id="lbl_VOLBIO" alignment="TOP_LEFT" layoutX="185.0" layoutY="210.0" prefHeight="115.0" prefWidth="449.0" text="[BIO]" wrapText="true">
-         <font>
-            <Font size="20.0" />
-         </font>
-         <padding>
-            <Insets bottom="10.0" left="10.0" right="10.0" />
-         </padding>
       </Label>
       <JFXButton id="JFXBTN" fx:id="btn_EditProfile" buttonType="RAISED" layoutX="15.0" layoutY="241.0" onAction="#EditProfileBTNClicked" prefHeight="25.0" prefWidth="158.0" text="Edit Profile" />
-      <Text layoutX="194.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="82.91015243530273">
+      <Text layoutX="198.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="82.91015243530273">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text layoutX="189.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="82.91015243530273">
+      <Text layoutX="193.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" wrappingWidth="82.91015243530273">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text id="lbl_bottom" layoutX="189.0" layoutY="210.0" lineSpacing="9.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="About me" textAlignment="CENTER" underline="true" wrappingWidth="448.9999859929084">
+      <Text id="lbl_bottom" layoutX="190.0" layoutY="83.0" lineSpacing="9.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="About me" textAlignment="CENTER" underline="true" wrappingWidth="448.9999859929084">
          <font>
             <Font size="20.0" />
          </font>
@@ -119,7 +111,7 @@
           <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView id="IView_Social" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="IView_Social" fx:id="IVew_FaceBook" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../media/Icons/FacebookICON.png" />
                </image>
@@ -127,7 +119,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView id="IView_Social" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+            <ImageView id="IView_Social" fx:id="IVew_Twitter" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                <image>
                   <Image url="@../../../media/Icons/TwitterIcon.png" />
                </image>
@@ -135,7 +127,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView id="IView_Social" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <ImageView id="IView_Social" fx:id="IVew_Linkedin" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <image>
                   <Image url="@../../../media/Icons/LinkinIcon.png" />
                </image>
@@ -143,7 +135,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView id="IView_Social" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+            <ImageView id="IView_Social" fx:id="IVew_Instagram" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                <image>
                   <Image url="@../../../media/Icons/instagramIcon.png" />
                </image>
@@ -153,22 +145,28 @@
             </ImageView>
          </children>
       </GridPane>
-      <Label alignment="CENTER" layoutX="16.0" layoutY="292.0" prefHeight="17.0" prefWidth="158.0" text="dd/mm/yyyy" />
-      <Label alignment="CENTER" layoutX="13.0" layoutY="329.0" prefHeight="17.0" prefWidth="158.0" text="dd/mm/yyyy" />
-      <Label layoutX="25.0" layoutY="362.0" text="-Tag[]">
+      <Label fx:id="lbl_dateCreated" alignment="CENTER" layoutX="16.0" layoutY="292.0" prefHeight="17.0" prefWidth="158.0" text="dd/mm/yyyy" />
+      <Label fx:id="lbl_dateCreated" alignment="CENTER" layoutX="13.0" layoutY="329.0" prefHeight="17.0" prefWidth="158.0" text="dd/mm/yyyy" />
+      <Label fx:id="lbl_tag1" layoutX="25.0" layoutY="362.0" text="-Tag[]">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="25.0" layoutY="387.0" text="-Tag[]">
+      <Label fx:id="lbl_tag2" layoutX="25.0" layoutY="387.0" text="-Tag[]">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="25.0" layoutY="412.0" prefWidth="42.0" text="-Tag[]">
+      <Label fx:id="lbl_tag3" layoutX="25.0" layoutY="412.0" prefWidth="42.0" text="-Tag[]">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
+      <TextArea fx:id="txtArea_VOLBIO" editable="false" layoutX="195.0" layoutY="88.0" prefHeight="200.0" prefWidth="438.0" promptText="lbl_CharityBIO" text="[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <ListView layoutX="196.0" layoutY="412.0" prefHeight="173.0" prefWidth="438.0" />
   </children>
 </Pane>

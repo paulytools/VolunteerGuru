@@ -1,105 +1,89 @@
 package sample.FXML.HomePanel.tabController;
 
-import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
 import java.util.ResourceBundle;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
+
+import com.jfoenix.controls.JFXButton;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import sample.users.Organization;
-import sample.users.User;
 import sample.users.Volunteer;
+import sample.users.database.Database;
 
 public class tab3Controller extends HomeController implements Initializable {
 
-  /* ID/Variable Declarations */
-  @FXML public JFXButton btn_OpenLogin;
-  @FXML public JFXButton btn_SignUp;
-  @FXML private Stage stage;
-  @FXML private TableView<Volunteer> TV_Results;
-  @FXML private TableColumn<Volunteer, String> TC1_Volunteer_Name;
-  @FXML private TableColumn<Volunteer, String> TC2_CityVolunteer;
-  @FXML private TableColumn<Volunteer, String> TC3_DescriptionVolunteer;
+	/* ID/Variable Declarations */
+	@FXML
+	public JFXButton btn_OpenLogin;
+	@FXML
+	public JFXButton btn_SignUp;
+	@FXML
+	private Stage stage;
+	@FXML
+	private TableView<Volunteer> TV_Results;
+	@FXML
+	private TableColumn<Volunteer, String> TC1_Volunteer_Name;
+	@FXML
+	private TableColumn<Volunteer, String> TC2_CityVolunteer;
+	@FXML
+	private TableColumn<Volunteer, String> TC3_DescriptionVolunteer;
 
-  /* Methods / Events*/
+	/* Methods / Events */
 
-  @FXML // homePanel.fxml -> login.fxml
-  public void OpenLoginBTNClicked() throws IOException {
-    super.OpenLoginBTNClicked();
-  }
-  @FXML // homePanel.fxml -> signUp.fxml
-  public void signUpBTNClicked() throws IOException {
-    super.signUpBTNClicked();
-  }
+	@FXML // homePanel.fxml -> login.fxml
+	public void OpenLoginBTNClicked() throws IOException {
+		super.OpenLoginBTNClicked();
+	}
 
-@Override
-  public void initialize(URL url, ResourceBundle resources) {
-  setUpComboBox();
-  TC1_Volunteer_Name.setCellValueFactory(new PropertyValueFactory<Volunteer, String>(
-      "userName"));
-  TC2_CityVolunteer.setCellValueFactory(new PropertyValueFactory<Volunteer, String>(
-      "address"));
-  TC3_DescriptionVolunteer.setCellValueFactory(new PropertyValueFactory<Volunteer, String>(
-      "email"));
-  TV_Results.setItems(getGroup());
+	@FXML // homePanel.fxml -> signUp.fxml
+	public void signUpBTNClicked() throws IOException {
+		super.signUpBTNClicked();
+	}
 
-  TV_Results.setOnMouseClicked(new EventHandler<MouseEvent>() {
-    @Override
-    public void handle(MouseEvent click) {
-      if (click.getClickCount() == 2) {
-        //Use ListView's getSelected Item
-        Volunteer currentItemSelected = TV_Results.getSelectionModel()
-            .getSelectedItem();
-        System.out.println(currentItemSelected.toString());
-        //use this to do whatever you want to. Open Link etc.
-        try {
-          VOL_Selected_Clicked(currentItemSelected);
-        } catch (IOException e) {
-          e.printStackTrace();
-        }
-      }
-    }
-  });
-}
+	@Override
+	public void initialize(URL url, ResourceBundle resources) {
+		setUpComboBox();
+		TC1_Volunteer_Name.setCellValueFactory(new PropertyValueFactory<Volunteer, String>("tvName"));
+		TC2_CityVolunteer.setCellValueFactory(new PropertyValueFactory<Volunteer, String>("address"));
+		TC3_DescriptionVolunteer.setCellValueFactory(new PropertyValueFactory<Volunteer, String>("aboutMe"));
+		TV_Results.setItems(getGroup());
 
-  public ObservableList<Volunteer> getGroup() {
-      List<String> Name =  Arrays.asList("Roberts","Cooper","Anderson","Kim","Williams","Rex",
-          "Stephens","Grace","Hellen","Megan","Phoebe","Nick");
-      List<String> City = Arrays.asList("Miami, FL","Naples, FL","St.PetersBurg, FL","Tampa, FL");
-    Random rand = new Random();
-    int idNum;
-    int pickCity;
-    int pickName;
+		TV_Results.setOnMouseClicked(new EventHandler<MouseEvent>() {
+			@Override
+			public void handle(MouseEvent click) {
+				if (click.getClickCount() == 2) {
+					// Use ListView's getSelected Item
+					Volunteer currentItemSelected = TV_Results.getSelectionModel().getSelectedItem();
 
-    ObservableList<Volunteer> Group = FXCollections.observableArrayList();
-    Group.add(new Volunteer("VOLUNTEER", "CarlosPerez1001", "f", "f", "....","Naples", "f"));
-    //Generates Volunteer
-    for(int i = 0; i < 25;i++){
-      idNum = rand.nextInt(9000)+1000;
-      pickCity =rand.nextInt(City.size());
-      pickName =rand.nextInt(Name.size());
-      Group.add(new Volunteer("VOLUNTEER",Name.get(pickName)+idNum,"","","....",City.get(pickCity),""));
-    }
+					System.out.println(currentItemSelected.toString());
+					// use this to do whatever you want to. Open Link etc.
+					try {
+						VOL_Selected_Clicked(currentItemSelected);
 
-    return Group;
-  }
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		});
+	}
+
+	// Displays all volunteers from database
+	public ObservableList<Volunteer> getGroup() {
+		ObservableList<Volunteer> group = FXCollections.observableArrayList();
+		ArrayList<Volunteer> volunteers = Database.getVolunteers();
+		for (int i = 0; i < volunteers.size(); i++) 
+		group.add(volunteers.get(i));
+		return group;
+	}
 }
