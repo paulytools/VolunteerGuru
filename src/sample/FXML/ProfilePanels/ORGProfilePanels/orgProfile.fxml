@@ -46,7 +46,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <JFXButton id="JFXBTN" fx:id="btn_EditProfile" buttonType="RAISED" layoutX="14.0" layoutY="232.0" onAction="#EditProfileBTNClicked" prefHeight="25.0" prefWidth="158.0" text="Edit Profile" />
+            <JFXButton id="JFXBTN" fx:id="btn_EditProfile" buttonType="RAISED" layoutX="14.0" layoutY="232.0" onAction="#EditProfileBTNClicked" prefHeight="25.0" prefWidth="158.0" text="Edit Profile" visible="false" />
             <Text layoutX="188.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="82.91015243530273">
                <font>
                   <Font size="20.0" />

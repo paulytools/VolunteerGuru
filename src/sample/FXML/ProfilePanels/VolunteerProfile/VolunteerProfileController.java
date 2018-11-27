@@ -15,6 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import sample.users.User;
 import sample.users.Volunteer;
 
 
@@ -32,6 +33,8 @@ public class VolunteerProfileController implements Initializable {
   @FXML public Label lbl_tag1;
   @FXML public Label lbl_tag2;
   @FXML public Label lbl_tag3;
+  @FXML public JFXButton btn_VolInvite;
+  @FXML public  JFXButton  btn_VolMessage;
 
   public void EditProfileBTNClicked() throws IOException {
     try {
@@ -50,15 +53,15 @@ public class VolunteerProfileController implements Initializable {
 
 
   }
-
-  public void setAccount(Volunteer vol) {
-    lbl_VOLName.setText(vol.getUserName());
-    lbl_VOLAddress.setText(vol.getAddress());
-    lbl_VOLContact.setText(vol.getEmail());
-    txtArea_VOLBIO.setText(vol.getAboutMe());
-    lbl_tag1.setText("-" +vol.getInterests()[0]);
-    lbl_tag2.setText("-" +vol.getInterests()[1]);
-    lbl_tag3.setText("-" +vol.getInterests()[2]);
+  //Should be taking in Vol.
+  public void setAccount(User user) {
+    lbl_VOLName.setText(user.getUserName());
+    lbl_VOLAddress.setText(user.getAddress());
+    lbl_VOLContact.setText(user.getEmail());
+    txtArea_VOLBIO.setText(user.getAboutMe());
+    lbl_tag1.setText("-" +user.getInterests()[0]);
+    lbl_tag2.setText("-" +user.getInterests()[1]);
+    lbl_tag3.setText("-" +user.getInterests()[2]);
   }
 
   @Override

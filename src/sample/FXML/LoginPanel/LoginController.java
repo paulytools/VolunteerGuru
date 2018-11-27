@@ -51,10 +51,30 @@ public class LoginController extends HomeController {
 			stage = (Stage) btn_Login.getScene().getWindow();
 			stage.close();
 			System.out.println("Valid");
-			HomeController.loggedInUser = DataBase.getUser(userNameField.getText(), passwordField.getText());
-			System.out.println(loggedInUser.getUserName() + " has logged in.");
+
+			UpdateUI();
 		}
 	}
+	public void UpdateUI(){
+		try {
+			FXMLLoader fxmlLoader = new FXMLLoader(
+					getClass().getResource(
+							"/sample/FXML/HomePanel/homePanel.fxml"));
+			Parent profile = (Parent) fxmlLoader.load();
+			HomeController Controller = fxmlLoader.getController();
+
+			Controller.loggedInUser = DataBase.getUser(userNameField.getText(), passwordField.getText());
+
+			Controller.LoginUser();
+			Stage newStage = new Stage();
+			newStage.setTitle("Volunteer Guru");
+			newStage.setScene(new Scene(profile));
+			newStage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 
 	@FXML //Change homePanel -> signUp.fxml
 	private void signUpBTNClickedLG() throws IOException {

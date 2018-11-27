@@ -14,6 +14,7 @@ public class Volunteer extends User {
 		tvName = userName + "\n" + getInvites() + " Invites";
 	}
 
+
 	// Allows volunteer to join an event
 	public void attendEvent(Event event) {
 		ArrayList<String> actions = DataBase.getActionList();

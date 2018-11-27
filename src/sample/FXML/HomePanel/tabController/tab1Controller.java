@@ -24,12 +24,8 @@ import sample.users.database.DataBase;
 public class tab1Controller extends HomeController implements Initializable {
 
   /* ID/Variable Declarations */
-  @FXML
-  public JFXButton btn_OpenLogin;
-  @FXML
-  public JFXButton btn_SignUp;
-  @FXML
-  public JFXButton btn_demo;
+
+
   
   @FXML
   public TextField txtFL_SearchCharity;
@@ -51,14 +47,6 @@ public class tab1Controller extends HomeController implements Initializable {
   /* Methods / Events*/
   //Home Panel functions
   //homePanel.fxml -> login.fxml"
-  public void OpenLoginBTNClicked() throws IOException {
-    super.OpenLoginBTNClicked();
-  }
-
-  // homePanel.fxml -> signUp.fxml
-  public void signUpBTNClicked() throws IOException {
-    super.signUpBTNClicked();
-  }
 
 
   @Override

@@ -16,7 +16,8 @@ public class User {
 	protected String password;
 	
 	protected String tvName;
-	
+
+
 	public User(String type, String userName, String firstName, String lastName, String email, String address,
 			String password) {
 		TYPE = type;

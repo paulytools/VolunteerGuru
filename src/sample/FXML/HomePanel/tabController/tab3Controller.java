@@ -23,10 +23,7 @@ import sample.users.database.DataBase;
 public class tab3Controller extends HomeController implements Initializable {
 
 	/* ID/Variable Declarations */
-	@FXML
-	public JFXButton btn_OpenLogin;
-	@FXML
-	public JFXButton btn_SignUp;
+
 	@FXML
 	private Stage stage;
 	@FXML
@@ -40,15 +37,6 @@ public class tab3Controller extends HomeController implements Initializable {
 
 	/* Methods / Events */
 
-	@FXML // homePanel.fxml -> login.fxml
-	public void OpenLoginBTNClicked() throws IOException {
-		super.OpenLoginBTNClicked();
-	}
-
-	@FXML // homePanel.fxml -> signUp.fxml
-	public void signUpBTNClicked() throws IOException {
-		super.signUpBTNClicked();
-	}
 
 	@Override
 	public void initialize(URL url, ResourceBundle resources) {

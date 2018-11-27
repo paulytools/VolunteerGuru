@@ -16,6 +16,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import sample.users.Organization;
+import sample.users.User;
 
 public class OrgProfileController implements Initializable {
 
@@ -27,6 +28,8 @@ public class OrgProfileController implements Initializable {
   @FXML public Label lbl_tag3;
   @FXML private TextArea txtArea_CharityBIO;
   @FXML public  JFXButton btn_EditProfile;
+  @FXML public JFXButton btn_OrgMessage;
+  @FXML public  JFXButton btn_OrgFollow;
 
 
 
@@ -58,7 +61,7 @@ public class OrgProfileController implements Initializable {
 
 
 
-  public void setAccount(Organization org) {
+  public void setAccount(User org) {
     lbl_CharityName.setText(org.getUserName());
     lbl_CharityAddress.setText(org.getAddress());
     lbl_CharityContact.setText(org.getEmail());
