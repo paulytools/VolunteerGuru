@@ -34,7 +34,7 @@
          </padding>
       </HBox>
 
-      <TextField fx:id="txtFL_SearchCharity" prefHeight="25.0" prefWidth="603.0">
+     <TextField fx:id="txtFL_SearchVol" prefHeight="25.0" prefWidth="603.0">
          <VBox.margin>
             <Insets left="10.0" right="10.0" />
          </VBox.margin>

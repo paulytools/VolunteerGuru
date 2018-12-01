@@ -169,7 +169,8 @@
                   <Font size="16.0" />
                </font>
             </TextArea>
-            <ListView layoutX="194.0" layoutY="413.0" prefHeight="173.0" prefWidth="438.0" />
+            <ListView fx:id="listView_Follower" layoutX="194.0" layoutY="413.0" prefHeight="173.0"
+              prefWidth="438.0"/>
          </children>
       </Pane>
    </children>

@@ -158,6 +158,16 @@ public class DataBase {
 		}
 		return events;
 	}
+
+	public static Event getAnEvent(String name) {
+		Event event = null;
+		for (int i = 0; i < events.size(); i++) {
+			if (events.get(i).getName().equals(name)) {
+				event = events.get(i);
+			}
+		}
+		return event;
+	}
 	
 	public static ArrayList<String> getActionList() {
 		// stores all accounts
@@ -208,9 +218,14 @@ public class DataBase {
 			String p = userData.split(":")[10];
 			
 			if (name.equals(u) && password.equals(p)) {
-				user = new User(id, u, firstName, lastName, email, address, password);
+				if (id.equals(User.VOLUNTEER)) {
+					user = new Volunteer(id, u, firstName, lastName, email, address, password);
+				} else {
+					user = new Organization(id, u, firstName, lastName, email, address, password);
+				}
 				user.setAboutMe(aboutMe);
 				user.setInterests(interests);
+
 			}
 		}
 		return user;
@@ -219,10 +234,33 @@ public class DataBase {
 	public static ArrayList<Organization> getOrganizations() {
 		return organizations;
 	}
-	
+
+	public static Organization getAnOrganization(String name) {
+
+		Organization org = null;
+		for (int i = 0; i < organizations.size(); i++) {
+			if (organizations.get(i).getUserName().equals(name)) {
+				org = organizations.get(i);
+			}
+		}
+		return org;
+	}
+
 	public static ArrayList<Volunteer> getVolunteers() {
 		return volunteers;
 	}
+
+	public static Volunteer getAVolunteer(String name) {
+
+		Volunteer vol = null;
+		for (int i = 0; i < volunteers.size(); i++) {
+			if (volunteers.get(i).getUserName().equals(name)) {
+				vol = volunteers.get(i);
+			}
+		}
+		return vol;
+	}
+	
 	
 	public static ArrayList<Event> getEvents() {
 		return events;

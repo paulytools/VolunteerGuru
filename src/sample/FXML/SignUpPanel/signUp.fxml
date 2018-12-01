@@ -17,7 +17,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="700.0" stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.SignUpPanel.signUpController">
+<VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="700.0"
+  stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/10.0.1"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.SignUpPanel.signUpController">
    <children>
       <Label id="lbl_HomeScreen" text="Creating a Guru Account" underline="true">
          <font>
@@ -163,7 +165,9 @@
                   <Insets left="305.0" />
                </GridPane.margin>
             </ComboBox>
-            <TextArea prefHeight="65.0" prefWidth="404.0" style="-fx-border-color: grey;" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+           <TextArea fx:id="txtFL_About" prefHeight="65.0" prefWidth="404.0"
+             style="-fx-border-color: grey;" wrapText="true" GridPane.columnIndex="1"
+             GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="5.0" right="60.0" />
                </GridPane.margin>

@@ -25,12 +25,10 @@ public class tab1Controller extends HomeController implements Initializable {
 
   /* ID/Variable Declarations */
 
-
-  
   @FXML
   public TextField txtFL_SearchCharity;
   @FXML
-  public JFXButton JFXBTN;
+  public JFXButton btn_Search;
 
   @FXML
   private Stage stage;
@@ -43,34 +41,27 @@ public class tab1Controller extends HomeController implements Initializable {
   @FXML
   private TableColumn<Organization, String> TC3_Description;
 
-
-  /* Methods / Events*/
-  //Home Panel functions
-  //homePanel.fxml -> login.fxml"
-
+  /* Methods / Events */
+  // Home Panel functions
+  // homePanel.fxml -> login.fxml"
 
   @Override
   public void initialize(URL url, ResourceBundle resources) {
     setUpComboBox();
-    TC1_Organization_Name.setCellValueFactory(new PropertyValueFactory<Organization, String>(
-        "tvName"));
-    TC2_City.setCellValueFactory(new PropertyValueFactory<Organization, String>(
-        "address"));
-    TC3_Description.setCellValueFactory(new PropertyValueFactory<Organization, String>(
-        "aboutMe"));
-    TV_Results.setItems(getGroup());
+    TC1_Organization_Name
+        .setCellValueFactory(new PropertyValueFactory<Organization, String>("tvName"));
+    TC2_City.setCellValueFactory(new PropertyValueFactory<Organization, String>("address"));
+    TC3_Description.setCellValueFactory(new PropertyValueFactory<Organization, String>("aboutMe"));
+    TV_Results.setItems(getGroup(DataBase.getOrganizations()));
 
-    //Row Selected listener
+    // Row Selected listener
     TV_Results.setOnMouseClicked(new EventHandler<MouseEvent>() {
-
       @Override
       public void handle(MouseEvent click) {
         if (click.getClickCount() == 2) {
-          //Use ListView's getSelected Item
-          Organization currentItemSelected = TV_Results.getSelectionModel()
-              .getSelectedItem();
-          System.out.println(currentItemSelected.toString());
-          //use this to do whatever you want to. Open Link etc.
+          // Use ListView's getSelected Item
+          Organization currentItemSelected = TV_Results.getSelectionModel().getSelectedItem();
+          // use this to do whatever you want to. Open Link etc.
           try {
             Org_Selected_Clicked(currentItemSelected);
           } catch (IOException e) {
@@ -79,14 +70,41 @@ public class tab1Controller extends HomeController implements Initializable {
         }
       }
     });
+
+    btn_Search.setOnMouseClicked(new EventHandler<MouseEvent>() {
+      public void handle(MouseEvent e) {
+        ArrayList<Organization> organizations = DataBase.getOrganizations();
+        String filterText = txtFL_SearchCharity.getText();
+        if (filterText.equals("")) {
+          TV_Results.setItems(getGroup(organizations));
+        }
+        ArrayList<Organization> filteredOrg = new ArrayList<Organization>();
+        for (int i = 0; i < organizations.size(); i++) {
+          if (organizations.get(i).getUserName().startsWith(filterText)) {
+            filteredOrg.add(organizations.get(i));
+          }
+        }
+        TV_Results.setItems(getGroup(filteredOrg));
+      }
+    });
+
+    TV_Results.setOnMouseEntered(new EventHandler<MouseEvent>() {
+      public void handle(MouseEvent e) {
+        TV_Results.refresh();
+      }
+    });
   }
 
 	// Displays all volunteers from Database
-	public ObservableList<Organization> getGroup() {
+  public ObservableList<Organization> getGroup(ArrayList<Organization> organizations) {
 		ObservableList<Organization> group = FXCollections.observableArrayList();
-		ArrayList<Organization> organizations = DataBase.getOrganizations();
-		for (int i = 0; i < organizations.size(); i++) 
-		group.add(organizations.get(i));
+    for (int i = 0; i < organizations.size(); i++) {
+      group.add(organizations.get(i));
+    }
 		return group;
 	}
+
+  public TableView<Organization> getTV_Results() {
+    return TV_Results;
+  }
 }

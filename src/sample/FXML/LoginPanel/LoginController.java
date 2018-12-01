@@ -20,6 +20,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import sample.Main;
 import sample.FXML.HomePanel.tabController.HomeController;
 import sample.users.database.DataBase;
 
@@ -55,17 +56,18 @@ public class LoginController extends HomeController {
 			UpdateUI();
 		}
 	}
-	public void UpdateUI(){
+
+  public void UpdateUI() {
 		try {
 			FXMLLoader fxmlLoader = new FXMLLoader(
 					getClass().getResource(
 							"/sample/FXML/HomePanel/homePanel.fxml"));
 			Parent profile = (Parent) fxmlLoader.load();
 			HomeController Controller = fxmlLoader.getController();
-
-			Controller.loggedInUser = DataBase.getUser(userNameField.getText(), passwordField.getText());
-
+      HomeController.loggedInUser = DataBase
+          .getUser(userNameField.getText(), passwordField.getText());
 			Controller.LoginUser();
+      Main.stage.close();
 			Stage newStage = new Stage();
 			newStage.setTitle("Volunteer Guru");
 			newStage.setScene(new Scene(profile));

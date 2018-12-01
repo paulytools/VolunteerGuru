@@ -1,11 +1,8 @@
 package sample.FXML.HomePanel.tabController;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-
-import com.jfoenix.controls.JFXButton;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -22,7 +19,6 @@ public class tab2Controller extends HomeController implements Initializable {
 
 	/* ID/Variable Declarations */
 
-
 	@FXML
 	private Stage stage;
 	@FXML
@@ -37,7 +33,6 @@ public class tab2Controller extends HomeController implements Initializable {
 	/* Methods / Events */
 	// Home Panel functions
 
-
 	@Override
 	public void initialize(URL url, ResourceBundle resources) {
 		setUpComboBox();
@@ -45,7 +40,6 @@ public class tab2Controller extends HomeController implements Initializable {
 		TC2_City.setCellValueFactory(new PropertyValueFactory<Event, String>("address"));
 		TC3_Description.setCellValueFactory(new PropertyValueFactory<Event, String>("description"));
 		TV_Results.setItems(getGroup());
-
 	}
 
 	// Display all events
