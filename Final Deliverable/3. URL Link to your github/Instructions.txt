@@ -1,4 +1,1 @@
-URL/Link to your github or other web repository (webpage/wiki/googlesites/etc.) 
-You must email the URL to the instructor and the TA, and if you want you can include in your docs
-* Must contain team name/member names, source code, and ALL deliverables from the entire semester: documents, presentations, videos of your prototype and your final product
-* We will open items from your web repo and check contents.
+Still need: source code,  video of your final product
