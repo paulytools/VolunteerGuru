@@ -82,7 +82,7 @@ public class VolunteerProfileController implements Initializable {
 		ArrayList<String> names = DataBase.getAVolunteer(lbl_VOLName.getText()).getHostName();
 		if (!names.isEmpty()) {
 			ObservableList<String> orgs = FXCollections
-					.observableArrayList("Organization " + names + " has sent you an invite!");
+          .observableArrayList(names);
 			listView_Host.setItems(orgs);
 		}
 	}

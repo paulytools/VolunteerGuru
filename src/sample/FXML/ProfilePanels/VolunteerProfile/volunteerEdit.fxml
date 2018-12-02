@@ -110,7 +110,6 @@
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
                                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address: " textAlignment="RIGHT" wrappingWidth="117.50390625">
@@ -125,10 +124,6 @@
                                                    <font>
                                                       <Font size="16.0" />
                                                    </font></Text>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text: " textAlignment="RIGHT" wrappingWidth="117.13671875" GridPane.rowIndex="3">
-                                                   <font>
-                                                      <Font size="16.0" />
-                                                   </font></Text>
                                                 <JFXTextField fx:id="txtFL_VolAddress" GridPane.columnIndex="1">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
@@ -140,11 +135,6 @@
                                                    </GridPane.margin>
                                                 </JFXTextField>
                                                 <JFXTextField fx:id="txtFL_VolAboutme" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                                                   <GridPane.margin>
-                                                      <Insets left="15.0" right="10.0" />
-                                                   </GridPane.margin>
-                                                </JFXTextField>
-                                                <JFXTextField fx:id="txtFL_VolFillerStuff" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                    <GridPane.margin>
                                                       <Insets left="15.0" right="10.0" />
                                                    </GridPane.margin>

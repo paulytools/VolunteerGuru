@@ -2,3 +2,10 @@ EVENT:Romanov05:Soccer Program
 FOLLOW:Romanov05:Boys and Girls Club of America
 INVITE:Romanov05:Boys and Girls Club of America
 FOLLOW:Carlos03:Boys and Girls Club of America
+INVITE:Romanov05:Goodwill
+INVITE:Carlos03:Goodwill
+INVITE:Paul07:Goodwill
+INVITE:David04:Goodwill
+FOLLOW:Carlos03:Goodwill
+FOLLOW:Carlos03:Direct Relief
+INVITE:Carlos03:Direct Relief

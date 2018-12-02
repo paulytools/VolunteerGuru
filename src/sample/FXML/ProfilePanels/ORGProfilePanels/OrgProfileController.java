@@ -97,7 +97,7 @@ public class OrgProfileController implements Initializable {
 				.getFollowersName();
 		if (!names.isEmpty()) {
 			ObservableList<String> vols = FXCollections
-					.observableArrayList("User " + names + " is following you!");
+					.observableArrayList(names);
 			listView_Follower.setItems(vols);
 		}
 

@@ -45,7 +45,6 @@
                <Font name="System Bold" size="12.0" />
             </font>
          </JFXButton>
-         <JFXButton id="JFXBTN" layoutY="87.0" prefHeight="30.0" prefWidth="100.0" text="Go back" />
          <Label fx:id="lbl_LoginError" prefHeight="17.0" textAlignment="RIGHT" textFill="#ff4e4e">
             <font>
                <Font size="16.0" />

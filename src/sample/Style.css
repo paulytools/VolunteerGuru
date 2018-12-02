@@ -16,14 +16,22 @@
     -fx-font-family: 'Georgia',sans-serif;
     -fx-font-weight: bold;
 }
-#lbl_bottom{
-    -fx-border-style: solid solid none solid;
-    -fx-border-width: 5;
-    -fx-border-color: red;
-}
+
 #IView_Social:hover{
    -fx-scale-x: 1.2;
     -fx-scale-y: 1.2;
+
+}
+
+.text-field {
+    -fx-background-color: #FFFFED;
+    -fx-border-color: #3F5866;
+    -fx-border-radius: .5em;
+}
+
+.text-area .content {
+    -fx-background-color: #FFFFED;
+    -fx-border-color: black;
 
 }
 /*******************************************************************************
@@ -33,31 +41,16 @@
  ******************************************************************************/
 
 .scroll-bar:vertical > .track-background, .scroll-bar:horizontal > .track-background {
-    -fx-background-color: #F1F1F1;
-    -fx-background-insets: 0.0;
+    -fx-background-color: transparent;
+    -fx-border-color: derive(#3F5866, 90%);
+
 }
 
 .scroll-bar:vertical > .thumb, .scroll-bar:horizontal > .thumb {
-    -fx-background-color: #BCBCBC;
-    -fx-background-insets: 0.0;
-    -fx-background-radius: 1.0;
+    -fx-background-color: derive(#3F5866, 90%);
+
 }
 
-/* Up- and Down-Button Padding */
-.scroll-bar:vertical > .increment-button, .scroll-bar:vertical > .decrement-button {
-    -fx-padding: 5 2 5 2;
-}
-
-
-/* Up Arrow */
-.scroll-bar:vertical > .increment-button > .increment-arrow {
-    -fx-shape: "M298 426h428l-214 214z";
-}
-
-/* Down Arrow */
-.scroll-bar:vertical > .decrement-button > .decrement-arrow {
-    -fx-shape: "M298 598l214-214 214 214h-428z";
-}
 
 /*******************************************************************************
  *                                                                             *
@@ -139,11 +132,43 @@
     -fx-padding: 0.0em; /* 0 */
 }
 
+.table-row-cell:hover {
+    -fx-background-color: #BDD3DE;
+    -fx-text-fill: black;
+}
+
+
 .table-row-cell:selected {
     -fx-text-fill: white;
     -fx-background-color: #3F5866;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color: #3F5866;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* scroll bar starts here */
+
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: derive(#3F5866, 80%);
+
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(#3F5866, 90%);
+
 }
 
 /*******************************************************************************
@@ -153,7 +178,80 @@
  ******************************************************************************/
 /*******************************************************************************
  *                                                                             *
- * Tableview                                                                   *
+ * ListView                                                                    *
  *                                                                             *
  ******************************************************************************/
+
+.list-view .list-cell:even {
+    -fx-background-color: #FFFFE2;
+    -fx-text-fill: black;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: #FFFFED;
+    -fx-text-fill: black;
+}
+
+.list-view, .list-view:focused, .list-view:selected {
+    -fx-background-color: transparent;
+    -fx-border-color: #3F5866;
+}
+
+.list-view .list-cell:filled:selected:focused, .list-view .list-cell:filled:selected {
+    -fx-background-color: #3F5866;
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell:filled:hover {
+    -fx-background-color: #BDD3DE;
+
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ListView                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+/*******************************************************************************
+ *                                                                             *
+ * ComboBox                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+.combo-box-base {
+    -fx-background-color: #EDEDDC;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+    -fx-border-color: black;
+    -fx-border-radius: 5, 5, 4, 3;
+}
+
+.combo-box-base:showing {
+    -fx-color: -fx-pressed-base;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #3F5866;
+
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover {
+
+    -fx-background-color: #BDD3DE;
+    -fx-text-fill: black;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #BDD3DE;
+}
+
+.combo-box-base:hover {
+    -fx-color: #BDD3DE;
+}
+
+.combo-box-base:focused {
+    -fx-background-color: #BDD3DE;
+
+}
+
 

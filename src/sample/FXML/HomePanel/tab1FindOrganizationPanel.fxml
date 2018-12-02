@@ -63,7 +63,8 @@
       </HBox>
       <TableView fx:id="TV_Results" style="-fx-fixed-cell-size: 100px;" VBox.vgrow="ALWAYS">
         <columns>
-          <TableColumn fx:id="TC1_Organization_Name" maxWidth="807.333394408226" prefWidth="238.00007379055023" resizable="false" text="Organization" />
+          <TableColumn id="TC1" fx:id="TC1_Organization_Name" maxWidth="807.333394408226"
+            prefWidth="238.00007379055023" resizable="false" text="Organization"/>
             <TableColumn fx:id="TC2_City" prefWidth="130.66666412353516" resizable="false" text="City" />
           <TableColumn fx:id="TC3_Description" maxWidth="738.6666564941406" prefWidth="738.6666564941406" resizable="false" text="Description" />
         </columns>

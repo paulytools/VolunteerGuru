@@ -53,7 +53,6 @@ public class HomeController {
 		btn_OpenLogin1.setVisible(false);
 		btn_OpenLogin2.setVisible(false);
 		btn_OpenLogin3.setVisible(false);
-
 		btn_SignUp1.setVisible(false);
 		btn_SignUp2.setVisible(false);
 		btn_SignUp3.setVisible(false);
@@ -84,6 +83,7 @@ public class HomeController {
 				Controller.btn_VolMessage.setText("Inbox");
 				Stage newStage = new Stage();
 				newStage.setTitle("Profile");
+				newStage.setResizable(false);
 				newStage.setScene(new Scene(profile));
 				newStage.show();
 
@@ -151,6 +151,7 @@ public class HomeController {
 			Stage newStage = new Stage();
 			newStage.setTitle("Profile");
 			newStage.setScene(new Scene(profile));
+			newStage.setResizable(false);
 			newStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -168,6 +169,7 @@ public class HomeController {
 			Stage newStage = new Stage();
 			newStage.setTitle("Profile");
 			newStage.setScene(new Scene(profile));
+			newStage.setResizable(false);
 			newStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
