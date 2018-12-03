@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.ProfilePanels.ORGProfilePanels.OrgProfileController">
+   <children>
+      <Pane prefHeight="605.0" prefWidth="1000.0">
+         <children>
+            <Rectangle id="rectangle" arcHeight="10.0" arcWidth="10.0" fill="#bfbfbf07" height="543.0" layoutX="182.0" layoutY="53.0" stroke="#4747473e" strokeType="INSIDE" strokeWidth="2.0" width="462.0" />
+            <JFXButton id="JFXBTN" fx:id="btn_OrgFollow" buttonType="RAISED" layoutX="668.0" layoutY="15.0" prefWidth="150.0" text="Follow" />
+            <JFXButton id="JFXBTN" fx:id="btn_OrgMessage" buttonType="RAISED" layoutX="832.0" layoutY="15.0" prefWidth="150.0" text="Message" />
+            <ImageView id="ProfileIMGView" fx:id="IView_ProfilePic" fitHeight="175.0" fitWidth="175.0" layoutX="5.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../media/Org_User/User1.png" />
+               </image>
+            </ImageView>
+            <Label id="lbl_HomeScreen" fx:id="lbl_CharityName" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="-2.0" prefHeight="58.0" prefWidth="647.0" text="[Charity Name PlaceHolder] " underline="true" wrapText="true">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <JFXButton id="JFXBTN" fx:id="btn_EditProfile" buttonType="RAISED" layoutX="14.0" layoutY="232.0" onAction="#EditProfileBTNClicked" prefHeight="25.0" prefWidth="158.0" text="Edit Profile" visible="false" />
+           <Text layoutX="183.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0"
+             text="About Us" textAlignment="CENTER" underline="true"
+             wrappingWidth="460.99999964237225">
+               <font>
+                 <Font name="System Bold" size="20.0"/>
+               </font>
+            </Text>
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="650.0" layoutY="56.0" prefHeight="543.0" prefWidth="350.0" style="-fx-border-color: #474749; -fx-border-radius: 5px;">
+               <content>
+                  <FlowPane prefHeight="200.0" prefWidth="336.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-color: #474749; -fx-border-radius: 5px;" text="Events" textAlignment="CENTER" underline="true" wrappingWidth="299.9488983154297">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Text>
+                        <Pane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #BB6F6B;">
+                           <FlowPane.margin>
+                              <Insets bottom="20.0" />
+                           </FlowPane.margin>
+                        </Pane>
+                        <Pane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #BB6F6B;">
+                           <FlowPane.margin>
+                              <Insets bottom="20.0" />
+                           </FlowPane.margin>
+                        </Pane>
+                        <Pane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #BB6F6B;">
+                           <FlowPane.margin>
+                              <Insets bottom="20.0" />
+                           </FlowPane.margin>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+                     </padding>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+            <GridPane layoutX="24.0" layoutY="462.0" prefHeight="137.0" prefWidth="121.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="65.66666666666667" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.33333587646484" minWidth="10.0" prefWidth="55.33333333333333" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView id="IView_Social" fx:id="IVew_FaceBook" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../media/Icons/FacebookICON.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="IView_Social" fx:id="IVew_Twitter" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../media/Icons/TwitterIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="IView_Social" fx:id="IVew_Linkedin" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../media/Icons/LinkinIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="IView_Social" fx:id="IVew_Instagram" fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../media/Icons/instagramIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <Text layoutX="5.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account created" textAlignment="CENTER" wrappingWidth="157.99998879432678">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="5.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last time on" textAlignment="CENTER" wrappingWidth="157.99998879432678">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="lbl_dateCreated" alignment="CENTER" layoutX="5.0" layoutY="283.0" prefHeight="17.0" prefWidth="158.0" text="dd/mm/yyyy" />
+            <Label fx:id="lbl_dateLastOn" alignment="CENTER" layoutX="5.0" layoutY="319.0" prefHeight="17.0" prefWidth="158.0" text="dd/mm/yyyy" />
+            <Label fx:id="lbl_tag2" layoutX="14.0" layoutY="379.0" text="-Tag [ ]" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_tag3" layoutX="14.0" layoutY="404.0" text="-Tag [ ]" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_tag1" layoutX="14.0" layoutY="354.0" text="-Tag [ ]" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtArea_CharityBIO" editable="false" layoutX="195.0" layoutY="79.0" prefHeight="200.0" prefWidth="438.0" promptText="lbl_CharityBIO" text="[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................[Bio}............................................................................" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+           <ListView fx:id="listView_Follower" layoutX="194.0" layoutY="436.0" prefHeight="150.0"
+             prefWidth="438.0"/>
+           <Text fill="#000000b2" layoutX="192.0" layoutY="431.0" strokeType="OUTSIDE"
+             strokeWidth="0.0" text="Followers" underline="true">
+             <font>
+               <Font name="System Bold" size="16.0"/>
+             </font>
+           </Text>
+           <GridPane layoutX="195.0" layoutY="291.0" prefHeight="150.0" prefWidth="438.0">
+             <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0"
+                 prefWidth="68.0"/>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="384.0" minWidth="10.0"
+                 prefWidth="370.0"/>
+             </columnConstraints>
+             <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+             </rowConstraints>
+             <children>
+               <Text fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:"
+                 wrappingWidth="82.91015243530273" GridPane.rowIndex="1">
+                 <font>
+                   <Font name="System Bold" size="16.0"/>
+                 </font>
+               </Text>
+               <Text fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:"
+                 wrappingWidth="82.91015243530273">
+                 <font>
+                   <Font name="System Bold" size="16.0"/>
+                 </font>
+               </Text>
+               <Label fx:id="lbl_CharityContact" prefHeight="55.0" prefWidth="370.0"
+                 text="[******************************************************************]"
+                 wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                 <font>
+                   <Font size="16.0"/>
+                 </font>
+               </Label>
+               <Label fx:id="lbl_CharityAddress" prefHeight="55.0" prefWidth="360.0"
+                 text="[******************************************************************]"
+                 wrapText="true" GridPane.columnIndex="1">
+                 <font>
+                   <Font size="16.0"/>
+                 </font>
+               </Label>
+             </children>
+           </GridPane>
+         </children>
+      </Pane>
+   </children>
+</VBox>

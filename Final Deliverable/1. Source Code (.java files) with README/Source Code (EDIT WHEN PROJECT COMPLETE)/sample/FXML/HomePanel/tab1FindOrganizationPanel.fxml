@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.HomePanel.tabController.tab1Controller">
+   <children>
+
+      <HBox prefHeight="47.0" prefWidth="600.0">
+         <children>
+
+             <Label id="lbl_HomeScreen" minWidth="-Infinity" text="Find Organization">
+               <font>
+                  <Font name="Georgia Bold" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="10.0" />
+               </HBox.margin>
+             </Label>
+
+            <Region prefHeight="53.0" prefWidth="373.0" HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+
+      <TextField fx:id="txtFL_SearchCharity" prefHeight="25.0" prefWidth="603.0">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </TextField>
+
+     <HBox>
+         <children>
+            <ComboBox fx:id="cmbox_Tag" minWidth="-Infinity" prefWidth="150.0" promptText="Select a category.">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Region prefHeight="27.0" prefWidth="630.0" HBox.hgrow="ALWAYS" />
+            <JFXButton id="JFXBTN" fx:id="btn_Search" buttonType="RAISED" prefHeight="25.0" prefWidth="150.0" stylesheets="@../../Style.css" text="Search">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <TableView fx:id="TV_Results" style="-fx-fixed-cell-size: 100px;" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn id="TC1" fx:id="TC1_Organization_Name" maxWidth="807.333394408226"
+            prefWidth="238.00007379055023" resizable="false" text="Organization"/>
+            <TableColumn fx:id="TC2_City" prefWidth="130.66666412353516" resizable="false" text="City" />
+          <TableColumn fx:id="TC3_Description" maxWidth="738.6666564941406" prefWidth="738.6666564941406" resizable="false" text="Description" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <VBox.margin>
+            <Insets bottom="20.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
+</VBox>
