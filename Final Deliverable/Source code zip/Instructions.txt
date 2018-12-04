@@ -1,0 +1,8 @@
+Source Code (.java files) with README ("how to install and run" instructions)
+* A zip file containing source code files and a text file README/how to install instructions
+* Goal: anyone to be able to download and run your application per your instructions
+* Having example data (e.g. a few example records to start with) would be helpful as long as it is obvious how to use it/apply to the code.
+* Please make sure your java project can be installed and run by anyone with minimal effort. 
+Too many times there are complex dependencies, database issues, or similar. 
+An easy check is to install and run in a class computer. 
+Even better, using the cmd line.
