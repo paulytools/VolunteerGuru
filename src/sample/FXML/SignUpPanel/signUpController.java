@@ -22,7 +22,7 @@ public class signUpController implements Initializable {
 
 
 	private Stage stage;
-  //GIT Test
+
 	@FXML private JFXRadioButton rbtn_Volunteer;
 	@FXML private JFXRadioButton rbtn_Charity;
 	@FXML private Button btn_Submit;
@@ -133,11 +133,11 @@ public class signUpController implements Initializable {
 
 		cmbox_Tag1.getItems().addAll("...","Environment","Animals","Human Services","International","Health","Education","Art/Culture","Fitness","Youth");
 		cmbox_Tag1.setPromptText("Select a category.");
-    cmbox_Tag2.getItems()
-        .addAll("...", "Environment", "Animals", "Human Services", "International");
+    cmbox_Tag2.getItems().addAll("...", "Environment", "Animals", "Human Services", "International",
+        "Health", "Education", "Art/Culture", "Fitness", "Youth");
 		cmbox_Tag2.setPromptText("Select a category.");
-    cmbox_Tag3.getItems()
-        .addAll("...", "Environment", "Animals", "Human Services", "International");
+    cmbox_Tag3.getItems().addAll("...", "Environment", "Animals", "Human Services", "International",
+        "Health", "Education", "Art/Culture", "Fitness", "Youth");
 		cmbox_Tag3.setPromptText("Select a category.");
 
 	}
