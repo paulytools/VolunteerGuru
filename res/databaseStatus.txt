@@ -9,3 +9,4 @@ INVITE:Carlos03:Sports Entertainment
 INVITE:Paul07:Sports Entertainment
 INVITE:Charly01:Sports Entertainment
 FOLLOW:Carlos03:Sports Entertainment
+FOLLOW:Paul07:Direct Relief
