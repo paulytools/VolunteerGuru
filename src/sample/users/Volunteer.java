@@ -26,13 +26,11 @@ public class Volunteer extends User {
 				String user = actions.get(i).split(":")[1];
 				String e = actions.get(i).split(":")[2];
 				// Checks if volunteer has already joined event
-				if ((user.equals(userName) && e.equals(event.getName()))) {
+        if ((user.equals(userName) && e.equals(event.getName())))
 					break;
-				}
-			}
-			if (i == actions.size() - 1) {
+      }
+      if (i == actions.size() - 1)
 				DataBase.saveAction(Action.EVENT, this, event);
-			}
 		}
 	}
 
@@ -48,13 +46,11 @@ public class Volunteer extends User {
 				String vol = actions.get(i).split(":")[1]; // volunteer
 				String org = actions.get(i).split(":")[2]; // organization
 				// Checks if a user is already in the database
-				if ((vol.equals(userName) && org.equals(organization.getUserName()))) {
+        if ((vol.equals(userName) && org.equals(organization.getUserName())))
 					break;
-				}
-			}
-			if (i == actions.size() - 1) {
+      }
+      if (i == actions.size() - 1)
 				DataBase.saveAction(Action.FOLLOW, this, organization);
-			}
 		}
 
 	}

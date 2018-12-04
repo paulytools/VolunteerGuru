@@ -22,20 +22,20 @@ public class signUpController implements Initializable {
 
 
 	private Stage stage;
-	//GIT Test
+
 	@FXML private JFXRadioButton rbtn_Volunteer;
 	@FXML private JFXRadioButton rbtn_Charity;
 	@FXML private Button btn_Submit;
-	@FXML
-	private Label lbl_UserHandle;
-	@FXML
-	private Label lbl_SignUpError;
-	@FXML
-	private Label lbl_Tags;
-	@FXML
-	private Label lbl_About;
-	@FXML
-	public ToggleGroup RoleToggle;
+  @FXML
+  private Label lbl_UserHandle;
+  @FXML
+  private Label lbl_SignUpError;
+  @FXML
+  private Label lbl_Tags;
+  @FXML
+  private Label lbl_About;
+  @FXML
+  public ToggleGroup RoleToggle;
 	@FXML private TextField txtFL_UserHandle;
 	@FXML private TextField txtFL_FirstName;
 	@FXML private TextField txtFL_LastName;
@@ -44,14 +44,14 @@ public class signUpController implements Initializable {
 	@FXML private TextField txtFL_Password;
 	@FXML private TextField txtFL_CPassword;
 
-	@FXML
-	private TextArea txtFL_About;
-	@FXML
-	private ComboBox cmbox_Tag1;
-	@FXML
-	private ComboBox cmbox_Tag2;
-	@FXML
-	private ComboBox cmbox_Tag3;
+  @FXML
+  private TextArea txtFL_About;
+  @FXML
+  private ComboBox cmbox_Tag1;
+  @FXML
+  private ComboBox cmbox_Tag2;
+  @FXML
+  private ComboBox cmbox_Tag3;
 
 
 
@@ -81,8 +81,8 @@ public class signUpController implements Initializable {
 		// creates a user based on data provided
 		User newUser = new User(type, userName, firstName, lastName, email, address, password);
 		newUser.setAboutMe(aboutMe);
-		String[] interests = {cmbox_Tag1.getValue().toString(), cmbox_Tag2.getValue().toString(),
-				cmbox_Tag3.getValue().toString()};
+    String[] interests = {cmbox_Tag1.getValue().toString(), cmbox_Tag2.getValue().toString(),
+        cmbox_Tag3.getValue().toString()};
 		newUser.setInterests(interests);
 
 		// checks if account already exists

@@ -6,12 +6,16 @@ import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import sample.FXML.LoginPanel.LoginController;
+import sample.users.User;
 import sample.users.database.DataBase;
 import sample.users.events.Event;
 
@@ -40,6 +44,16 @@ public class tab2Controller extends HomeController implements Initializable {
 		TC2_City.setCellValueFactory(new PropertyValueFactory<Event, String>("address"));
 		TC3_Description.setCellValueFactory(new PropertyValueFactory<Event, String>("description"));
 		TV_Results.setItems(getGroup());
+
+    TV_Results.setOnMouseClicked(new EventHandler<MouseEvent>() {
+      public void handle(MouseEvent e) {
+        if (LoginController.hasUserLoggedIn()) {
+          if (LoginController.loggedInUser.getType().equals(User.VOLUNTEER)) {
+          }
+        }
+      }
+
+    });
 	}
 
 	// Display all events

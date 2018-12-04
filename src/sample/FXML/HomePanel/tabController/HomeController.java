@@ -53,6 +53,7 @@ public class HomeController {
 		btn_OpenLogin1.setVisible(false);
 		btn_OpenLogin2.setVisible(false);
 		btn_OpenLogin3.setVisible(false);
+
 		btn_SignUp1.setVisible(false);
 		btn_SignUp2.setVisible(false);
 		btn_SignUp3.setVisible(false);
@@ -82,8 +83,8 @@ public class HomeController {
 				Controller.btn_VolInvite.setText("Log out");
 				Controller.btn_VolMessage.setText("Inbox");
 				Stage newStage = new Stage();
-				newStage.setTitle("Profile");
 				newStage.setResizable(false);
+				newStage.setTitle("Profile");
 				newStage.setScene(new Scene(profile));
 				newStage.show();
 
@@ -101,6 +102,7 @@ public class HomeController {
 				Controller.btn_OrgMessage.setText("Log out");
 				Controller.btn_OrgFollow.setText("Inbox");
 				Stage newStage = new Stage();
+				newStage.setResizable(false);
 				newStage.setTitle("Profile");
 				newStage.setScene(new Scene(profile));
 				newStage.show();
@@ -150,8 +152,8 @@ public class HomeController {
 			Controller.setAccount(org);
 			Stage newStage = new Stage();
 			newStage.setTitle("Profile");
-			newStage.setScene(new Scene(profile));
 			newStage.setResizable(false);
+			newStage.setScene(new Scene(profile));
 			newStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -177,9 +179,8 @@ public class HomeController {
 	}
 
 	public static boolean hasUserLoggedIn() {
-		if (loggedInUser == null) {
+		if (loggedInUser == null)
 			return false;
-		}
 		return true;
 	}
 

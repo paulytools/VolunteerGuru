@@ -5,27 +5,31 @@ import java.util.ArrayList;
 import sample.users.database.DataBase;
 
 public class Event {
- 
+
 	private String host;
 	private String name;
 	private String address;
 	private String date;
+  private String time;
 	private String description;
-	
+  private final int GOAL;
+
 	private String tvName;
-	
-	public Event(String host, String name, String date, String address) {
+
+  public Event(String host, String name, String date, String time, String address, int goal) {
 		this.host = host;
 		this.name = name;
 		this.date = date;
+    this.time = time;
 		this.address = address;
-		tvName = "[" + host + "]" + "\n" + name; 
-	}
-	
+    GOAL = goal;
+    tvName = "[" + host + "]" + "\n" + name;
+  }
+
 	public String getTvName() {
 		return tvName;
 	}
-	
+
 	public String getHost() {
 		return host;
 	}
@@ -33,23 +37,30 @@ public class Event {
 	public String getName() {
 		return name;
 	}
-	
-	public String getAddress() {
+
+  public String getAddress() {
 		return address;
 	}
-	
-	public void setDescription(String text) {
-		this.description = text + "\n" + date + "\n" + getParticipants() + " Participants";
-	}
-	
+
+  public void setDescription(String text) {
+    text += "\n" //
+        + "Date: " + date + "\n" //
+        + "Time: " + time + "\n" //
+        + "Goal: " + getParticipants() + " / " + GOAL + "\n";
+    this.description = text;
+
+  }
+
 	public String getDescription() {
 		return description;
 	}
-	
-	public String getEventData() {
-		return host + ":" + name + ":" + date + ":" + address + ":" + description;
-	}
-	
+
+  public String getEventData() {
+    return host + ":" + name + ":" + date + ":" + time + ":" + address + ":" + description
+        .split("\n")[0] + ":"
+        + GOAL;
+  }
+
 	// Finds all volunteers attending an event
 	public int getParticipants() {
 		ArrayList<String> actions = DataBase.getActionList();

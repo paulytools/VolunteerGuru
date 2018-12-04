@@ -27,7 +27,6 @@ import sample.users.Volunteer;
 import sample.users.database.DataBase;
 
 public class VolunteerProfileController implements Initializable {
-
 	@FXML
 	public JFXButton btn_EditProfile;
 
@@ -53,7 +52,7 @@ public class VolunteerProfileController implements Initializable {
 	public ListView<String> listView_Host;
 
 
-	public void EditProfileBTNClicked() throws IOException {
+  public void EditProfileBTNClicked() throws IOException {
 		try {
 			FXMLLoader fxmlLoader = new FXMLLoader(
 					getClass().getResource("/sample/FXML/ProfilePanels/VolunteerProfile/volunteerEdit.fxml"));
@@ -81,8 +80,7 @@ public class VolunteerProfileController implements Initializable {
 		// Displays all organizations inviting an organization
 		ArrayList<String> names = DataBase.getAVolunteer(lbl_VOLName.getText()).getHostName();
 		if (!names.isEmpty()) {
-			ObservableList<String> orgs = FXCollections
-          .observableArrayList(names);
+      ObservableList<String> orgs = FXCollections.observableArrayList(names);
 			listView_Host.setItems(orgs);
 		}
 	}

@@ -1,3 +1,4 @@
-Boys and Girls Club of America:Soccer Program:11/23/2018:Hollywood FL:We have coaches to teach the youth to play soccer.
-Boys and Girls Club of America:Basketball Program:11/23/2018:Hollywood FL:We have coaches to teach the youth to play basketball.
-Boys and Girls Club of America:Baseball Program:11/24/2018:Hollywood FL:We have coaches to teach the youth to play baseball.
+Boys and Girls Club of America:Soccer Program:11/23/2018:18:27:Hollywood FL:We have coaches to teach the youth to play soccer.:5
+Boys and Girls Club of America:Basketball Program:11/23/2018:18:27:Hollywood FL:We have coaches to teach the youth to play basketball.:5
+Boys and Girls Club of America:Baseball Program:11/24/2018:18:27:Hollywood FL:We have coaches to teach the youth to play baseball.:5
+Boys and Girls Club of America:We Take Your Exam For You:2018-12-08:18:08:Florida Gulf Coast University:We take your exam for you. Cheap $5:20

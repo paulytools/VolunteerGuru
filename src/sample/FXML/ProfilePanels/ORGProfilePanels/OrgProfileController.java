@@ -19,8 +19,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import sample.FXML.HomePanel.tabController.HomeController;
+import sample.FXML.SignUpPanel.signUpController;
 import sample.users.Organization;
 import sample.users.User;
 import sample.users.Volunteer;
@@ -50,6 +52,8 @@ public class OrgProfileController implements Initializable {
 	public JFXButton btn_OrgFollow;
 	@FXML
 	public ListView<String> listView_Follower;
+  @FXML
+  public Pane pane_event1;
 
 	public void EditProfileBTNClicked() throws IOException {
 		try {
@@ -82,7 +86,8 @@ public class OrgProfileController implements Initializable {
 			}
 
 		});
-	}
+
+  }
 
 	public void setAccount(User org) {
 		lbl_CharityName.setText(org.getUserName());
@@ -93,11 +98,10 @@ public class OrgProfileController implements Initializable {
 		lbl_tag2.setText("-" + org.getInterests()[1]);
 		lbl_tag3.setText("-" + org.getInterests()[2]);
 		// Displays all volunteers following an organization
-		ArrayList<String> names = DataBase.getAnOrganization(lbl_CharityName.getText())
-				.getFollowersName();
+    ArrayList<String> names =
+        DataBase.getAnOrganization(lbl_CharityName.getText()).getFollowersName();
 		if (!names.isEmpty()) {
-			ObservableList<String> vols = FXCollections
-					.observableArrayList(names);
+      ObservableList<String> vols = FXCollections.observableArrayList(names);
 			listView_Follower.setItems(vols);
 		}
 

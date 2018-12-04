@@ -72,9 +72,8 @@ public class tab3Controller extends HomeController implements Initializable {
 			public void handle(MouseEvent e) {
 				ArrayList<Volunteer> volunteers = DataBase.getVolunteers();
 				String filterText = txtFL_SearchVol.getText();
-				if (filterText.equals("")) {
+        if (filterText.equals(""))
 					TV_Results.setItems(getGroup(volunteers));
-				}
 				ArrayList<Volunteer> filteredOrg = new ArrayList<Volunteer>();
 				for (int i = 0; i < volunteers.size(); i++) {
 					if (volunteers.get(i).getUserName().startsWith(filterText)) {
@@ -85,7 +84,7 @@ public class tab3Controller extends HomeController implements Initializable {
 			}
 		});
 
-		TV_Results.setOnMouseEntered(new EventHandler<MouseEvent>() {
+    TV_Results.setOnMouseEntered(new EventHandler<MouseEvent>() {
 			public void handle(MouseEvent e) {
 				TV_Results.refresh();
 			}
@@ -95,9 +94,8 @@ public class tab3Controller extends HomeController implements Initializable {
 	// Displays all volunteers from Database
 	public ObservableList<Volunteer> getGroup(ArrayList<Volunteer> volunteers) {
 		ObservableList<Volunteer> group = FXCollections.observableArrayList();
-		for (int i = 0; i < volunteers.size(); i++) {
+    for (int i = 0; i < volunteers.size(); i++)
 			group.add(volunteers.get(i));
-		}
 		return group;
 	}
 }
