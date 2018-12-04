@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 import sample.users.User;
 import sample.users.database.DataBase;
 
-public class SignUpController implements Initializable {
+public class signUpController implements Initializable {
 
 
 	private Stage stage;
