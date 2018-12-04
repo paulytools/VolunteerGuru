@@ -21,10 +21,8 @@ Note for school project: You want a potential client or hirer to be able to run 
 ## Built With
 
 * IntelliJ IDEA 2018.2.2  
-* Derby
-* SQL
 * SceneBuilder
-* 
+* Jfoenix Material Design library
 
 ## Authors
 
