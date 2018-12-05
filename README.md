@@ -24,9 +24,9 @@ Note for school project: You want a potential client or hirer to be able to run 
 
 ## Built With
 
-* IntelliJ IDEA 2018.2.2  
-* SceneBuilder
-* Jfoenix Material Design library
+* IntelliJ IDEA 2018.2.2(https://www.jetbrains.com/idea/)
+* SceneBuilder(https://gluonhq.com/products/scene-builder/)
+* Jfoenix Material Design library(http://www.jfoenix.com/)
 
 ## Authors
 
