@@ -23,6 +23,7 @@ Please refer to this [Getting Started PDF]( https://github.com/paulytools/Volunt
 * [IntelliJ IDEA 2018.2.2](https://www.jetbrains.com/idea/)
 * [SceneBuilder](https://gluonhq.com/products/scene-builder/)
 * [Jfoenix Material Design Library](http://www.jfoenix.com/)
+* [Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 ## Authors
 
