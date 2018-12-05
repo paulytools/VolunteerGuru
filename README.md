@@ -16,11 +16,7 @@ We hope to bring users a simplified and organized system to find the Organizatio
 
 ## Getting Started
 
-Instructions to get a copy of the project up and running on someone's local machine for development and testing purposes.
-<br />
-Note for real project: You want to be able to share your project and enable collaboration. 
-<br />
-Note for school project: You want a potential client or hirer to be able to run your program. 
+Please refer to this [Getting Started PDF]( https://github.com/paulytools/VolunteerGuru/blob/master/README_Res/GettingStarted.pdf) to get instructions on how to get started with Volunteer Guru. 
 
 ## Built With
 
