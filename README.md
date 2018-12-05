@@ -43,6 +43,11 @@ The majority of this project has been taught in the Fall 2018 semester through c
 * CEN 3031 - Software Engineering Fundamentals - Dr. Anna Koufakou
 * COP 3003 - Object-Oriented Programming - Prof. Scott Vanselow
 
+## Documentation
+All documentation for this project are public and available through [Google Drive] (https://drive.google.com/drive/folders/1YFgY7DC1gBRTVBTEFX4QLfQXijo7DOy7).
+* [User Manual]	
+* [SRS] (https://docs.google.com/document/d/1ZU9fUrjzXcdCCK0K47DNGiVo_OTqOwc0z5cTQBTxyCE/edit)
+
 ## History
 
 All changes can be found in the Version Control document in the folder named 'Volunteer Guru Docs'. 
