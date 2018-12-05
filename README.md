@@ -16,7 +16,7 @@ We hope to bring users a simplified and organized system to find the Organizatio
 
 ## Getting Started
 
-Please refer to this [Getting Started PDF]( https://github.com/paulytools/VolunteerGuru/blob/master/README_Res/GettingStarted.pdf) to get instructions on how to launch the Volunteer Guru softhware. 
+Please refer to this [Getting Started PDF]( https://github.com/paulytools/VolunteerGuru/blob/master/README_Res/GettingStarted.pdf) to get instructions on how to launch the Volunteer Guru software. 
 
 ## Built With
 
