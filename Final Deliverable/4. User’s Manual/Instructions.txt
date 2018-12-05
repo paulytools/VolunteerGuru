@@ -1,4 +1,0 @@
-User’s Manual
-* Manual for a user to start and use your software (3+ pages assuming doc with normal/default font, spacing, margins, etc. and small/medium sized screenshots)
-* You should include several screenshots and examples
-* Please see example project link on Canvas-Modules-Project for user manual ideas
