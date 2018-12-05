@@ -1,4 +1,0 @@
-Final and Updated SRS
-* You must update your SRS to fix any issue based on comments from the instructor in Deliverable 1. 
-* Summarize any changes from Del1 in the modification history of the final SRS.
-* IF you make any major functionality changes since Deliverable 1, please note which req #'s have changed or deleted. 
