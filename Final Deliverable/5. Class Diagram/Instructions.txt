@@ -1,2 +1,0 @@
-A pdf or jpg or png with a CLEAR class diagram (use boxes for classes, a few attributes in main classes, and include most important relationships). 
-You do not need to depict all classes, but show some inheritance and the main ideas for your design.
