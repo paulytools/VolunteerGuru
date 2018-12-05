@@ -45,7 +45,7 @@ The majority of this project has been taught in the Fall 2018 semester through c
 
 ## Documentation
 All documentation for this project are public and available through [Google Drive](https://drive.google.com/drive/folders/1YFgY7DC1gBRTVBTEFX4QLfQXijo7DOy7).
-* [User Manual]	
+* [User Manual](https://docs.google.com/document/d/1_FH0TJteyQ6PqUPtfyYnRRRZWeQ-r0nGbriAcjpfZJE/edit)	
 * [SRS Document](https://docs.google.com/document/d/1ZU9fUrjzXcdCCK0K47DNGiVo_OTqOwc0z5cTQBTxyCE/edit)
 
 ## History
