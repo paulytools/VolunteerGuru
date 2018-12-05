@@ -8,7 +8,11 @@ We hope to bring users a simplified and organized system to find the Organizatio
 
 ## Demonstration
 
-ANIMATED GIF HERE
+# User Login
+![Alt Text](https://github.com/paulytools/VolunteerGuru/blob/master/README_Res/demo1.gif)
+
+# User Search and Follow event
+![Alt Text](https://github.com/paulytools/VolunteerGuru/blob/master/README_Res/demo2.gif)
 
 ## Getting Started
 
